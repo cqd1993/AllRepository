@@ -1,0 +1,147 @@
+*{
+	box-sizing: border-box;
+	margin: auto;
+}
+body{
+	background-color: aliceblue;
+}
+.wap{
+	width: 1000px;
+}
+.header{
+	clear: both;
+}
+#banner{
+	padding: 4px;
+	border: 2px;
+}
+
+.mainmenu_content{
+	width: 1000px;
+	
+}
+.mainmenu{
+	position: relative;
+}
+
+.mainmenu #menu #m_c {
+	float: left;
+	display: block;
+	width: 168px;
+	
+}
+
+.mainmenu #menu #m_c a{
+	text-decoration: none;
+	font-size: 20px;
+	padding: 15px;
+}
+
+.mainmenu #menu #m_c:hover{
+	
+	background-color: red;
+	margin: 0px;
+	color: red;
+}
+
+.mainmenu #menu #m_c .t_c li {
+	display: none;
+	border: 2px;
+	color: green;
+	border: 2px;
+	font-size: 20px;
+	border: 1px solid;	
+}
+
+.mainmenu #menu #m_c .t_c li {
+	display:inline-block;	
+	
+	top: 25px;
+}
+
+.mainmenu #menu #m_c .t_c li{
+	display: none;
+	list-style-type: none;
+
+}
+
+.mainmenu #menu #m_c:hover .t_c li {
+	display:block;	
+	width: 150px;
+	color: white;
+}
+
+.mainmenu #menu #m_c{
+		position: relative;
+}
+
+.mainmenu #menu #m_c > .t_c{
+	position: absolute;
+
+}
+.km a{
+	animation: menu 4s ease infinite;
+}
+
+@keyframes menu {
+	0%{ color: red }
+	25%{ color: yellow }
+	50%{ color: green }
+	70%{ color: blue }
+	100%{color:  pink}
+}
+
+.mainmenu >.content{
+	width: 1000px;
+	clear: both;
+	overflow-y: auto;
+	top: 132px;
+}
+
+.content .a {
+	float: left;
+	display: inline-flex;
+	
+}
+
+
+.content .a a img {
+	padding: 4px;
+	border: 1px;
+	float: left;
+	border-color: red;
+	border-style: dashed;
+	
+}
+
+.content .a .a1 a img p{
+	
+
+}
+.content .a p::before{
+	
+}
+.content .a p::after{
+	content: "   VNĐ";
+}
+
+
+.wap > .footer {
+	/*height: 100px;*/
+	background-color: aliceblue;
+	/*position: absolute;*/
+	/*bottom: -800px;*/
+	width: 1000px;
+	text-align: center;
+	color: red;
+
+}
+.footer #ft h4{
+	font-size: 18px;
+	padding-top: 20px;
+
+}
+.footer #ft h6{
+	font-size: 24px;
+	text-transform: capitalize;
+}

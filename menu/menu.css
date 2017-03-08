@@ -37,6 +37,9 @@ body{
 	padding: 15px;
 }
 
+.content .a .a1{
+	width: 310px;
+}
 .mainmenu #menu #m_c:hover{
 	
 	background-color: red;

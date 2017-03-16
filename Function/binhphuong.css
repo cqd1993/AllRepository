@@ -1,0 +1,14 @@
+*{
+	box-sizing: border-box;
+	margin: auto;
+}
+h2, h4{
+	text-align: center;
+	background-color: gray;
+	color: pink;
+
+}
+h4 {
+	color: blue;
+	font-size: 22px;
+}

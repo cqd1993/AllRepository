@@ -1,7 +1,18 @@
 // dùng substring or slice; tenmang.slice(start, end); tenmang.substring(start,end)
 // dùng substr(vị trí, độ dài chuỗi)
 function cut_string(arr) {
-	var str = arr.slice(0,10);
+	if(arr.length >30)
+	{
+		document.write("chuỗi ban đầu là:" +arr + "<br>");
+		var str = arr.slice(0,10);
+		document.write("chuỗi bị cắt là:"+ str + "...."+"<br>");
+	}
+	else
+	{
+		document.write("kiểm tra lại độ dài của chuỗi");
+		document.write("độ dài của chuỗi là:"+ arr.length + "<br>");
+	}
+	/*var str = arr.slice(0,10);
 	//var str = arr.substring(0,10);
 	//var str = arr.substr(0, 10);
 	//console.log(str);

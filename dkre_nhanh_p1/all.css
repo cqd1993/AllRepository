@@ -1,0 +1,13 @@
+*{
+	box-sizing: border-box;
+	margin: auto;
+}
+h2,h4{
+	text-align: center;
+	color: red;
+	background-color: gray;
+}
+h4{
+	color: white;
+	font-size: 18px;
+}

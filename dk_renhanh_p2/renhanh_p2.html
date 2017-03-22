@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bài tập rẽ nhánh phần hai</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+		box-sizing: border-box;
+		margin: auto;
+		}
+		h2,h4{
+			text-align: center;
+			color: red;
+			background-color: gray;
+		}
+		h4{
+			color: white;
+			font-size: 18px;
+		}
+		p{
+			color: green;
+		}
+		span{
+			color: red;
+	}
+	</style>
+</head>
+<body>
+	<h2>bài tập rẽ nhánh phần hai</h2>
+	<script type="text/javascript">
+		//bài 1
+
+	function time_current()
+	{
+		var d = new Date();
+		var n = d.getDate();// lấy ra ngày hiện tại;
+		var t = d.getMonth()+1;// lấy ra tháng;
+		var y = d.getFullYear(); //lấy ra năm hiện tại;
+		document.write("ngày tháng năm hiện tại là: ");
+		document.write(n +"/");
+		document.write(t +"/");
+		document.write(y +"<br>	");
+	}
+	//time_current();
+
+	//bài 2
+
+
+function bai2(string)
+{
+	if(typeof string =="string")
+	{
+		//console.log(typeof string);
+		//var tach = string.split("");
+		//console.log(tach);
+		if(string.length <10)
+		{
+
+			//document.write(tach.join("") +"<br>");
+			document.write("độ dài chuỗi là:"+ string +"<br>");
+		}
+		else
+		{
+			//document.write("độ dài chuỗi là:"+ tach.length +"<br>");
+			//document.write(string.slice(0,10).join("")+ "...." +"<br>");
+			document.write("độ dài chuỗi là:"+string.slice(0,10)+ "...." +"<br>");
+		}
+	}
+	else if( typeof string =="number")
+	{
+		//console.log(typeof string);
+		var str = string.toString();
+		//console.log(typeof str);
+		//var tach = str.split("");
+		if(str.length <10)
+		{
+			//document.write("độ dài chuỗi là:"+ tach.length +"<br>");
+			//document.write(tach.join("") +"<br>");
+			document.write("độ dài chuỗi là:"+ str +"<br>");
+		}
+		else
+		{
+			//document.write("độ dài chuỗi là:"+ tach.length +"<br>");
+			//document.write(tach.slice(0,10).join("")+ "...." +"<br>");
+			document.write("độ dài chuỗi là:"+str.slice(0,10)+ "...." +"<br>");
+		}
+	}
+}
+
+// bài 3
+
+
+var x ;
+function bai3(x) {
+	
+switch(x)
+{
+	case "A": 
+	document.write("điểm từ 8.5 to 10");
+	break;
+	case "B": 
+	document.write("điểm từ 7 to 8.4");
+	break;
+	case "C": 
+	document.write("điểm từ 5.5 to 6.9");
+	break;
+	case "D": 
+	document.write("điểm từ 4 to 5.4");
+	break;
+	case "F": 
+	document.write("điểm từ 0 to 3.9");
+	break;
+	default:
+	document.write("không có tồn tại trường hợp nào?");
+	break;
+ }
+}
+
+// bài 4
+
+var language = "TV";
+function translate() {
+	switch(language)
+	{
+		case "TV":
+		document.write("Xin chào");
+		break;
+		case "TA":
+		document.write("Hello");
+		break;
+		case "TT":
+		document.write("nễ hảo");
+		break;
+		case "TP":
+		document.write("Bonjour");
+		break;
+		case "TD":
+		document.write("hallo");
+		break;
+		default:
+		document.write("language other choose!");
+		break;
+	}
+
+}
+translate();
+
+// bài 5
+
+var mm = [];
+var arr = [false, false, false, true, false, true, false, true];
+for(var i = 0; i<= arr.length; i++)
+{
+	//var b = arr[i];
+	//document.write(b +"<br>");
+	//console.log(arr[i].length);
+	 mm.push(arr[i]);
+	// console.log(mm);
+	if(arr[i] == true)
+	{
+		break;
+	}
+	//document.write(b);
+}//console.log(mm.length);
+document.write("vị trí "+arr[i]+" đầu tiên là: "+ mm.length);
+
+// bài 6
+
+function bai6()
+{
+	var i=1; var n=100;
+	while(i<= n)
+	{
+		console.log(i);
+		 if((i%2)==0)
+		 {
+		 	document.write("<p>"+i+"</p>");
+		}
+		else{
+			document.write("<span>"+i+"</span>");
+		}
+		i++;
+	}
+
+}
+//bai6();
+</script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript renhanh_phan1</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+			margin: auto;
+	}
+		h2,h4{
+			text-align: center;
+			color: red;
+			background-color: gray;
+		}
+		h4{
+			color: white;
+			font-size: 18px;
+}
+	</style>
+</head>
+<body>
+<h2>điều kiện rẽ nhánh phần một</h2>
+<script type="text/javascript">
+	// bài 1
+	 // var a= "4";
+ // var b ="5";
+function test_haiso(a,b) {
+	document.write("hai số nhập vào là: a =" +a +" "+"b ="+b +"<br>");
+	/*if(typeof a =="string" && typeof b =="string")
+	{
+		// console.log(typeof a);
+		// console.log( typeof b);
+		document.write("a là :"+ typeof a +""+ "b là:"+ typeof b +"<br");
+		document.write("yêu cầu nhập lại giá trị a và b?");
+	}
+	else*/ 
+	if(typeof a === "string" || typeof b ==="number")
+	{
+		document.write("a là :"+ typeof a +""+ "b là:"+ typeof b +"<br>");
+		document.write("yêu cầu nhập lại giá trị");
+	}
+	else if(typeof a ==="number" || typeof b === "string")
+	{
+		document.write("a là :"+ typeof a +""+ "b là:"+ typeof b +"<br>");
+		document.write("yêu cầu nhập lại giá trị");
+	}
+	else
+	{
+		// console.log("a là:"+typeof a + "b là:"+typeof b);
+		//document.write("a là :"+ typeof a +" "+ "b là:"+ typeof b +"<br");
+		//document.write("bạn đã nhập đúng giá trị a và b!");
+		//var c = (a >b )? a:b;
+		if(a > b)
+		{
+			document.write("số lớn nhất:" +a +"<br>");
+			document.write("số nhỏ nhất:" +b +"<br>");
+		}
+		else
+		{
+			document.write("số nhỏ nhất:" +a +"<br>");
+			document.write("số lớn nhất:" +b +"<br>");
+		}
+	}
+
+}
+//test_haiso(a,b);
+// bài 2
+
+//var a = 3.7;
+function gt(a)
+{
+	if(typeof a =="number" && a >0)
+	{
+		var b = parseInt(a);
+		//var c = Math.round(a);
+		//console.log(typeof a);
+		var tich =1; var i =1;
+		while(i <= b)
+		{   
+			tich = tich*i;
+			i++;
+		}
+		document.write("giai thừa của "+ b+ " là:" + tich);
+	}
+	else
+	{
+		document.write("a là số nhỏ hơn hoặc = 0");
+	}
+}
+//gt(a);
+
+// bài 3
+function arr_sort(arr) {
+	var mm = [];
+	var i = 1;
+	for(; i<= arr.length; i++)
+	{
+		if((arr[i] %2) ==0)
+		{
+			mm.push(arr[i]);
+		}
+		//console.log(mm);// push từng phần tử vào arr
+	}
+	//console.log(mm);// tổng hợp kq push vào arr;
+	document.write("mảng cũ :"+"["+arr+"]"+"<br>");
+	document.write("mảng mới đã được sort theo bài: "+"["+mm.sort(function(a,b){ return a-b})+"]"+"<br>");
+}
+
+// bài 4
+
+
+/*var user = {
+	userName: "",
+	password: "",
+	confirm: "",
+}
+var mm = [];*/
+//console.log(user);
+ function bai4(user = {
+	userName: "",
+	password: "",
+	confirm: ""
+})
+ {
+ 	if(user.userName == null || user.userName == "")
+ 	{
+ 		console.log("không thành công");
+ 	}
+ 	else if(user.userName.length >20)
+ 		{
+ 			console.log(" kiểm tra lại độ dài userName");
+ 		}
+ 	else if(user.password == "" || user.password == null)
+ 	{
+ 		console.log("không thành công");
+ 		
+ 	}
+ 	else if(user.password.length >32 || user.password.length <6)
+ 		{
+ 			console.log(" kiểm tra lại độ dài password");
+ 		}	
+ 	else if(user.confirm == "" || user.confirm != user.password)
+ 	{
+ 		console.log("không thành công");
+ 		
+ 	}
+ 	else if(user.confirm != user.password)
+ 		{
+ 			console.log("kiểm tra lại password và confirm");
+ 		}
+ 	else
+ 	{	
+ 		console.log( "thành công");
+ 	}
+ }
+
+
+
+
+
+</script>
+</body>
+</html>

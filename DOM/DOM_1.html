@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document Object Model</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="all.css">
+</head>
+<body>
+	<h2> tạo một trang html với nội dung là ba đoạn văn. hãy viết các function có tác dụng nư sau:</h2>
+	<h4>1.function changeFontSize(x): Thay đổi kích thước font chữ của cả ba đoạn văn thành x pixels.</h4>
+	<hr>
+	<div id = "content">
+	<p id = "p1" class="d">this is paragraph 1. what is study to do?. i don't know. that alright smilce; </p>
+	<p id ="p2" class="d">this is paragraph 2. you want know it. JavaScript animations are done by programming gradual changes in an element's style.The changes are called by a timer. When the timer interval is small, the animation looks continuous.</p>
+	<p id = "p3" class="d">The document object represents your web page.If you want to access any element in an HTML page, you always start with accessing the document object.Below are some examples of how you can use the document object to access and manipulate HTML.</p>
+	</div>
+	<button onclick="changeFontSize(10)">bai1</button>
+	<button onclick="increaseFontsize('p2')">bai2(increaseFontsize)</button>
+	<button onclick="decreaseFontsize('p2')">bài 3(decreaseFontsize)</button>
+	<button onclick="changecolor()">bài 4(changecolor)</button>
+	<button onclick="changeBgcolor()">bài 5(changeBgcolor)</button>
+	<button onclick="copyContent('p1','p2')">baif6(copycontent)</button>
+	<script type="text/javascript" src="DOM.JS"></script>
+</body>
+</html>

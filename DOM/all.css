@@ -2,12 +2,11 @@
 	box-sizing: border-box;
 	margin: auto;
 }
-h2,h4{
-	text-align: center;
+h2, h4{
 	color: red;
-	background-color: gray;
+	text-align: center;
 }
 h4{
-	color: white;
+	color: green;
 	font-size: 18px;
 }

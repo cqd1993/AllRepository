@@ -122,10 +122,13 @@ margin: 5px 10px 10px 5px;
  clear: both;
 /* background-color: black;*/
 }
+.noi_dung .nd{
+  max-width: 33.333%;
+}
+
 .noi_dung img{
  float: left;
   margin: 10px;
-  max-width: 33.33%;
 
 }
 .noi_dung #nd_a1 img{

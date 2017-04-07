@@ -1,0 +1,78 @@
+*{
+	box-sizing: border-box;
+	margin: auto;
+}
+body{
+	background-color: gray;
+}
+.wap{
+	width: 940px;
+	background-color: red;
+}
+.content{
+	
+	margin: auto;
+	position: relative;
+
+}
+.card{
+	position: relative;
+	top: 0;
+	left: 0;
+	float: left;
+	/*padding: 5px;*/
+	margin-right: 5px;
+	transform: scale(0.8);
+	
+}
+img{
+	height: 210px;
+	width: 150px;
+
+}
+#font, #font1,#font2,#font3,#font4,#font5,#font6,#font7,
+#font8,#font9,#font10,#font11,#font12,#font13,#font14,#font15,
+#font16,#font17{
+	position: relative;
+	transform: rotateY(180deg);
+
+}
+.card:hover #font, .card:hover #font1,.card:hover #font2, .card:hover #font3,
+.card:hover #font4, .card:hover #font5,.card:hover #font6, .card:hover #font7,
+.card:hover #font8, .card:hover #font9,.card:hover #font10, .card:hover #font11,
+.card:hover #font12, .card:hover #font13,.card:hover #font14, .card:hover #font15,
+.card:hover #font16,.card:hover #font17{
+	transform: rotateY(0deg);
+}
+
+
+#back, #back1,#back2, #back3,#back4, #back5,#back6, #back7,
+#back8, #back9,#back10, #back11,#back12, #back13,#back14,
+ #back15,#back16, #back17{
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: rotateY(0deg);
+}
+.card:hover #back, .card:hover #back1,.card:hover #back2, .card:hover #back3,
+.card:hover #back4, .card:hover #back5,.card:hover #back6, .card:hover #back7,
+.card:hover #back8, .card:hover #back9,.card:hover #back10, .card:hover #back11,
+.card:hover #back12, .card:hover #back13,.card:hover #back14, .card:hover #back15,
+.card:hover #back16,.card:hover #back17{
+	transform: rotateY(180deg);
+}
+
+
+.card #font, .card #back, .card #font1, .card #back1,
+.card #font2, .card #back2, .card #font3, .card #back3,
+.card #font4, .card #back4, .card #font5, .card #back5,
+.card #font6, .card #back6, .card #font7, .card #back7,
+.card #font8, .card #back8, .card #font9, .card #back9,
+.card #font10, .card #back10, .card #font11, .card #back11,
+.card #font12, .card #back12, .card #font13, .card #back13,
+.card #font14, .card #back14, .card #font15, .card #back15,
+.card #font16, .card #back16,.card #font17, .card #back17
+{
+	transform: all 0,5s;
+	backface-visibility: hidden;
+}

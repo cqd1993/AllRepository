@@ -124,6 +124,7 @@ margin: 5px 10px 10px 5px;
 }
 .noi_dung .nd{
   max-width: 33.333%;
+  float: left;
 }
 
 .noi_dung img{

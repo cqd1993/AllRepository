@@ -1,0 +1,72 @@
+*{
+	box-sizing: border-box;
+	margin: auto;
+}
+body{
+	background-color: #FFEBCD;
+}
+.wap{
+	background-color:#F0FFF0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	/*position: absolute;*/
+	max-width: 1000px;
+	font-family: sans-serif;
+}
+h1{
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	position: relative;
+	clear: both;
+	margin: 80px 0px 0px 0px;
+	text-align: center;
+}
+form{
+	margin-left: 30px;
+	margin-bottom: 50px;
+}
+/*label{
+	width: 50px;
+	height: 50px;
+}*/
+#ht, #n_gay, #t_hang, #n_am, #male, #female,
+#dc, #e_mail, #mk{
+	height: 50px;
+	left: 0;
+	/*top: 0;*/
+	right: 0;
+	bottom:0px;
+	font-size: 20px;
+	/*position: absolute;*/
+	/*width: 20px;*/
+}
+#sm{
+	width: 150px;
+	height: 50px;
+	text-align: center;
+	font-size: 22px;
+}
+/*/*.wap .h{
+	/*width: 60px;
+	height: 50px;
+	margin-left: 20px;
+	/*font-size: 50px;
+
+}*/
+td{
+	width: 80px;
+	/*background-color: red;*/
+	height: 60px;
+	font-size: 22px;
+	/*border: 0px solid;
+	border-color: green;*/
+	/*font-family: dai;*/
+}
+/*@font-face{
+	font-family: dai;
+	src: url(special_font.woff)
+}*/

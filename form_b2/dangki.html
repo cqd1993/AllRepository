@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>đăng kí thành viên</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="wap">
+		<h1>Đăng kí thành viên</h1>
+<div id="dm"></div>
+		<form action="index.html" name="frm" onsubmit="myFunction()" ><table>
+		<tr>
+			<td><label for="ht" class="h" > Họ Tên:</label></td>
+			<td><input type="text" name="name" placeholder="họ tên" id="ht"/></td>
+		<tr>
+		<br/>
+		<tr>
+			<td><label class="h">Ngày</label></td>
+			<td><input type="date" name="date" value="2016-03-30" id ="ngay"></td>
+			</tr>
+			<br/>
+			<tr>
+			<td><label class="h">Giới tính:</label></td>
+			<td><input type="radio" name="gender" id="male" value="male" />
+			<label for="male" >Nam</label> 
+			<input type="radio" name="gender" id ="female" value="female">
+			<label for="female">Nữ</label> 
+			</td>
+			</tr>
+			<br/>
+			<tr>
+			<td><label for="dc" class="h">Địa chỉ:</label></td>
+			<td><input type="text" name="address" placeholder="địa chỉ" id ="dc"/></td>
+			</tr>
+			<br/>
+			<tr>
+			<td><label for="e_mail" class="h">Email:</label></td>
+			<td><input type="text" name="email" placeholder="email" id="e_mail" /></td>
+			</tr>
+			<br/>
+			<tr>
+			<td><label for="mk"  class="h">Mật khẩu:	</label></td>
+			<td><input type="password" name="password" placeholder="password" id="mk"/></td>
+			</tr>
+			<br/>
+
+			<td><input type="submit" value="đăng nhập" id="sm" ></td>
+		</form></table>
+	</div>	
+	<script type="text/javascript" src="script.js></script>
+</body>
+</html>

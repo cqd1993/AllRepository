@@ -13,7 +13,7 @@
   bottom: 0;
   background-color: #FFF8DC;
 }
-.title{
+.titl{
   position: relative;
   width: 1000px;
   float: left; 
@@ -22,12 +22,12 @@
   clear: both;
 
 }
-.title #a1, .title #a2, .title #a3{
+.titl #a1, .titl #a2{
   float: left;
-  top: 0;
+  /*top: 0;
   left: 0;
   bottom: 0;
-  right: 0;
+  right: 0;*/
   /*border: 2px solid;*/
   /*max-width: 280px;*/
   /*max-height: 200px;*/
@@ -258,4 +258,11 @@ padding: 60px 0 60px 0;
   src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
  /* font-weight: normal;
   font-style: normal;*/
+}
+.icon .fa-user{
+  float: left;
+  margin-left: 20px;
+  width: 30px;
+
+
 }

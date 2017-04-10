@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<h1> Đăng kí thành công</h1>
+<div id="dm"></div>
+<script type="text/javascript">
+var url = location.href;
+console.log(url);
+// var encode = "";
+var encode = encodeURIComponent("encode:"  +url);
+// var decode = "";
+/*var decode = decodeURIComponent("decode:" +encode);*/
+var decode = decodeURIComponent("decode:" +url);
+var res = encode +"<br>"+ decode;
+document.getElementById('dm').innerHTML = res;
+</script>
+<div id="dm"></div>
+</body>
+
+</html>

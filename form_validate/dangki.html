@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>đăng kí thành viên</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="wap">
+		<h1>Đăng kí thành viên</h1>
+		<!-- action="index.html" -->
+		<form  name="frm" id="form_reg" action="index.html">
+			<table>
+				<tr>
+					<td><label for="ht"> Họ Tên </label></td>
+					<td><input type="text" name="name" placeholder="họ tên" id="ht" maxlength="50"/>
+					<span class="error"></span>
+					</td>
+					
+				</tr>
+				
+				<tr>
+					<td><label for ="ngay"> Ngày</label></td>
+					<td><input type="date" name="date" value="2016-03-30" id ="ngay"><span class="error"></span></td>
+					
+				</tr>
+				
+				<tr>
+					<td><label> Giới tính </label></td>
+					<td><input type="radio" name="gender" id="male" value="male" checked="checked" /><label for ="male">Nam</label>
+					<input type="radio" name="gender" id ="female" value="female"><label for="female">Nữ</label></td>
+				</tr>
+				
+				<tr>
+					<td><label for="dc">Địa chỉ</label></td>
+					<td><input type="text" name="address" placeholder="địa chỉ" id ="dc" maxlength="50"/><span class="error"></span></td>
+					
+				</tr>
+		
+				<tr>
+					<td><label for="e_mail">Email</label></td>
+					<td><input type="text" name="email" placeholder="email" id="e_mail" maxlength="50"/><span class="error"></span></td>
+					
+				</tr>
+
+				<tr>
+					<td><label for="mk">Mật khẩu</label></td>
+					<td><input type="password" name="password" placeholder="password" id="mk" minlength="6" maxlength="50" /><span class="error"></span></td>
+					
+				</tr>
+		
+				<tr>
+					<td><label for="n_ber">Số điện thoại</label></td>
+					<td><input type="text" name="number" placeholder="number" id="n_ber" maxlength="12" minlength="10" /><span class="error" ></span></td>
+					
+				</tr>
+
+				<tr>
+					<td><label>Địa chỉ face</label></td>
+					<td><input type="url" name="url" placeholder="url" id="url" maxlength="50" />
+					<span class="error"></span></td>
+					
+				</tr>
+
+				<tr>
+					<td></td>
+					<td><input type="submit" value="đăng nhập" class="btn"  ></td>
+					<td></td>
+				</tr>
+			</table>
+		</form>
+	</div>	
+	<script src="jquery\jquery-3.2.0.min.js"></script>
+	<script>
+		$('#form_reg').on('submit', function(){
+			var isValid = true;
+			if($('#ht').val().trim() == '')
+			{
+				$('#ht').next('span').text('name is empty');
+				isValid = false;
+				console.log("name is empty");
+				// return false;
+			}
+			else
+			{
+				$('#ht').next('span').text('');
+				// return true;
+				
+			}
+			if($('#ngay').val() == "")
+			{
+				$('#ngay').next('span').text('day is empty');
+				isValid = false;
+				console.log("day is empty");
+				// return false;
+			}
+			else
+			{
+				$('#ngay').next('span').text('');
+				// return true;
+				
+			}
+			if($("#dc").val().trim() =="")
+			{
+				$("#dc").next("span").text("address is not");
+				isValid = false;
+				console.log("address is not");
+			}
+			else
+			{
+				$("#dc").next("span").next("");
+			}
+
+			if($('#e_mail').val().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/) == null)
+			{
+				$('#e_mail').next('span').text('email is invalidate');
+				isValid = false;
+				console.log("email isnot validate");
+				/*return false;*/
+			}
+			else
+			{
+				$('#e_mail').next('span').text('');
+				
+			}
+			if($('#mk').val().match(/^([a-zA-Z0-9_\-\.]+)|((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/) == null)
+			{
+				$('#mk').next('span').text('password isnot null');
+				isValid = false;
+				console.log("password isnot null");
+				// return false;
+			}
+			else
+			{
+				$('#mk').next('span').text('');
+				
+			}
+			if( isNaN($('#n_ber').val()))
+			{
+				$('#n_ber').next('span').text('you must enter number');
+				isValid = false;
+				console.log("not is number");
+				/*return false;*/
+			}
+			else
+			{
+				$('#n_ber').next('span').text('');
+				
+			 }
+			 if($('#url').val().match(/(http|ftp|https):\/\/[\w\-_]+(\.[\w\-_]+)+([\w\-\.,@?^=%&amp;:/~\+#]*[\w\-\@?^=%&amp;/~\+#])?/) ==null)
+			 {
+			 	$("#url").next("span").text("URL Must protocol http://");
+			 	isValid = false;
+			 	console.log("URL Must protocol http://");
+			 }
+			 else
+			 {
+			 	$("#url").next("span").text("");
+
+			 }
+
+			return isValid;
+
+		})
+		
+
+	</script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

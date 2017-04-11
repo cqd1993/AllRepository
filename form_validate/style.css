@@ -68,10 +68,6 @@ form{
 	margin-left: 10px;
 	margin-bottom: 50px;
 }
-/*label{
-	width: 50px;
-	height: 50px;
-}*/
 #ht,#dc, #e_mail, #mk, #url, #n_ber, #ngay{
 	height: 30px;
 	left: 0;
@@ -84,7 +80,6 @@ form{
 }
  #male, #female{
  	margin-left: 10px;
-
  }
 .btn_dangnhap .btn{
 	margin-left: 80px;
@@ -92,19 +87,12 @@ form{
 	width: 100px;
 	height: 40px;
 	text-align: center;
-	font-size: 18px;
-	
+	font-size: 18px;	
 }
 .btn_dangnhap .btn:hover{
 	background-color: #00FFFF;
 }
-/*/*.wap .h{
-	/*width: 60px;
-	height: 50px;
-	margin-left: 20px;
-	/*font-size: 50px;
 
-}*/
 td{
 	width: 100px;
 	/*background-color: red;*/
@@ -126,12 +114,8 @@ legend, fieldset{
 }
 span{
 	color: red;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: bolder;
 	/*max-width: 150px;
 	max-height: 150px;*/
 }
-/*.first_name{
-	width: 200px;
-	
-}*/

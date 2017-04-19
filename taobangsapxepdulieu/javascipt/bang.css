@@ -1,0 +1,29 @@
+*{
+	box-sizing: border-box;
+	margin: auto;
+	
+}
+.wap{
+	max-width: 1000px;
+}
+table, th, td{
+	border: 1px solid gray;
+	border-collapse: collapse;
+}
+td, th{
+	padding: 10px;
+	text-align: center;
+}
+img{
+	max-width: 15px;
+	/*max-height: 30px;*/
+}
+tr:hover td{
+	background-color: gray;
+}
+tr:hover th{
+	background: white;
+}
+.fa{
+	cursor: pointer;
+}

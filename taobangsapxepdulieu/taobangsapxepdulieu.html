@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tạo bảng và sắp xếp dữ liệu</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css\bang.css">
+	<link rel="stylesheet" type="text/css" href="css\icon.css">
+<!-- 	<link rel="stylesheet" type="text/css" href="css\font-awesome.min.css"> -->
+</head>
+<body>
+	<div class="wap">
+	<table id="myTable">
+	<thead>
+		<tr>
+			<th>
+				Avarta
+			</th>
+			<th onclick="sort_Name(0)">Họ Tên
+			<i class="fa fa-sort"></i>
+			<!-- <strong class="fa fa-sort" onclick="sort_Name('#myTable','.item', 'td:nth-child(1)', style='cursr:pointer')"></strong> -->
+			 <!-- <strong class="fa fa-sort-down"></strong>
+			 <strong class="fa fa-sort-up"></strong> -->
+			</th>
+			<th onclick="sort_Name(1)">
+				Giới tính
+				<strong class="fa fa-sort" ></strong>
+			</th>
+			<th onclick="sort_Name(2)">
+				Email
+				<i class="fa fa-sort"></i>
+			</th>
+			<th>
+				Số điện thoại
+			</th>
+		</tr>
+	</thead>
+		<tbody>
+			<tr >
+				<td>
+				 	<img src="img/m_n1.jpg">
+				</td>
+				<td id="1" >
+					Nguyễn văn a
+				</td>
+				<td>
+					Nam
+				</td>
+				<td>
+					nguyenvana@gmail.com
+				</td>
+				<td>
+					01234456789
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+				 	<img src="img/m_n2.jpg">
+				</td>
+				<td id="2" >
+					Nguyễn văn b
+				</td>
+				<td>
+					Nam
+				</td>
+				<td >
+					nguyenvanb@gmail.com
+				</td>
+				<td>
+					01234456788
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+				 	<img src="img/m_n3.jpg">
+				</td>
+				<td  id="3" >
+					Nguyễn thị c
+				</td>
+				<td>
+					Nữ
+				</td>
+				<td>
+					nguyenthic@gmail.com
+				</td>
+				<td>
+					01234456779
+				</td>
+			</tr>
+
+			<tr >
+				<td>
+				 	<img src="img/m_n4.jpg">
+				</td>
+				<td id="4" >
+					bùi mama
+				</td>
+				<td>
+					Nam
+				</td>
+				<td>
+					nguyenmina@gmail.com
+				</td>
+				<td>
+					01234456998
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+	<script type="text/javascript" src="javascipt\javascript.js"></script>
+</body>
+</html>

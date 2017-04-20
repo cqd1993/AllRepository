@@ -84,8 +84,8 @@ form{
 .btn_dangnhap .btn{
 	margin-left: 80px;
 	margin-bottom: 30px;
-	width: 100px;
-	height: 40px;
+	max-width: 100px;
+	max-height: 40px;
 	text-align: center;
 	font-size: 18px;	
 }
@@ -113,9 +113,9 @@ legend, fieldset{
 
 }
 span{
-	color: red;
+	/*color: blur;*/
 	font-size: 16px;
-	font-weight: bolder;
+	/*font-weight: bolder;*/
 	/*max-width: 150px;
 	max-height: 150px;*/
 }

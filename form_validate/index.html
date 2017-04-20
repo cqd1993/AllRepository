@@ -3,23 +3,45 @@
 <head>
 	<title></title>
 	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+			margin: auto;
+		}
+		#dm{
+			text-align: center;
+			/*background: gray;*/
+			/*max-width: 500px;*/
+
+		}
+		h1{
+			text-align: center;
+			color: green;
+		}
+		tr{
+			font-size: 18px;
+			font-family: sans-serif;
+			/*font-weight: bolder;*/
+		}
+	</style>
 </head>
 <body>
-
+<!-- <div id ="dm"></div> -->
 <h1> Đăng kí thành công</h1>
-<div id="dm"></div>
-<script type="text/javascript">
-var url = location.href;
-console.log(url);
-// var encode = "";
-var encode = encodeURIComponent("encode:"  +url);
-// var decode = "";
-/*var decode = decodeURIComponent("decode:" +encode);*/
-var decode = decodeURIComponent("decode:" +url);
-var res = encode +"<br>"+ decode;
-document.getElementById('dm').innerHTML = res;
-</script>
-<div id="dm"></div>
+	<div>
+		<table>
+			<tr id ="c1"></tr>
+			<tr id ="c2"></tr>
+			<tr id ="c3"></tr>
+			<tr id ="c4"></tr>
+			<tr id ="c5"></tr>
+			<tr id ="c6"></tr>
+			<tr id ="c7"></tr>
+			
+		</table>
+	</div>
+<!-- <button onclick="form_reg()">url</button> -->
+<script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,59 @@
+.imformation-contact p a{
+	text-decoration: none;
+}
+span{
+	color: #68c6dd;
+	font-size: 18px;
+}
+legend{
+	font-size: 18px;
+	color: #3857dd;
+	text-align: left;
+	font-family: 'GlyphiconsHalflings';
+}
+legend b{
+	font-family: 'GlyphiconsHalflings', sans-serif;
+}
+.row .register-login #login a{
+	display: none;
+}
+/*.row .content-login{
+	border: solid 0px #79dcdd;
+	max-width: 600px;
+	margin-left: 300px;
+}*/
+
+label span{
+	color: red;
+}
+
+.form-group a{
+	text-decoration: none;
+	color: white;
+
+}
+.form-group #login-form, .form-group #logout-form, .form-group #exit-form{
+	background-color: #33cc66;
+	color: #fff;
+}
+.form-group #login-form:hover , #logout-form:hover{
+	background-color: red;
+	color: #fff;
+}
+.form-group #exit-form:hover a{
+	color: #fff;
+}
+.lienket-create-account .facebook-goole{
+	/*width: 50px;
+	height: 50px;*/
+	font-size: 40px;
+	float: left;
+}
+.lienket-create-account .facebook-goole a{
+	padding: 5px;
+	color: #2410dd;
+}
+.lienket-create-account .google a{
+	
+	color: red;
+}

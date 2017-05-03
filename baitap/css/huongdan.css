@@ -1,0 +1,49 @@
+.imformation-contact p a{
+	text-decoration: none;
+}
+span{
+	color: #68c6dd;
+	font-size: 18px;
+}
+legend{
+	font-size: 18px;
+	color: #3857dd;
+	text-align: left;
+	font-family: 'GlyphiconsHalflings';
+}
+.row .content-huongdan{
+	border: solid 0px #79dcdd;
+	max-width: 800px;
+	margin-left: 200px;
+}
+
+label span{
+	color: red;
+}
+
+.form-group a{
+	text-decoration: none;
+	color: black;
+
+}
+.form-group #login-form:hover , #logout-form:hover{
+	background-color: #4aff97;
+	color: #fff;
+}
+.form-group #exit-form:hover a{
+	color: #fff;
+}
+.lienket-create-account .facebook-goole{
+	/*width: 50px;
+	height: 50px;*/
+	font-size: 30px;
+	float: left;
+}
+.lienket-create-account .facebook-goole a{
+	padding: 5px;
+	color: #2410dd;
+}
+.lienket-create-account .google a{
+	
+	color: red;
+}

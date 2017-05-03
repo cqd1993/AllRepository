@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vertical News Ticker Demo - [MyLớp.edu.vn]</title>
+
+	<!--<link href='http://fonts.googleapis.com/css?family=Noto+Sans&subset=vietnamese' rel='stylesheet' type='text/css'>-->
+	
+	<!-- Example Template use Bootstrap -->
+	
+	<link rel="shortcut icon" href="../../example-template/favicon.ico">
+	
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="../../example-template/preus-theme/css/bootstrap/bootstrap.min.css">
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+	<!-- jQuery -->	
+	<script src="../../example-template/js/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="../../example-template/preus-theme/css/skins/main.css">
+    <link  rel="stylesheet" href="../../example-template/style.css">
+
+	<!-- Example File after here -->
+
+	<script src="js/jquery.newsTicker.min.js"></script>
+	<script>
+		$(document).ready(function(e) {
+	        $('#nt-example1').newsTicker({
+				row_height: 80,
+				max_rows: 3,
+				duration: 4000,
+				prevButton: $('#nt-example1-prev'),
+				nextButton: $('#nt-example1-next')
+			});
+			$('#nt-example2').newsTicker({
+				row_height: 343,
+				max_rows: 3,
+				duration: 4000,
+				prevButton: $('#nt-example2-prev'),
+				nextButton: $('#nt-example2-next')
+			});
+	    });
+	</script>
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+    	<!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://mylop.edu.vn/" title="Lớp học Web Design trực tuyến - MyLớp is MyLove"><img src="http://mylop.edu.vn/wp-content/uploads/2015/07/logo.png" width="45" height="45"></a>
+        </div>
+    
+    	<!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://mylop.edu.vn/jquery-advanced-news-ticker-tao-khoi-cuon-tin-tu-dong/"><span class="glyphicon glyphicon-menu-left"></span> Quay lại bài viết</a></li>
+            </ul>
+	    </div>
+	</div><!-- /.container -->
+</nav>
+
+
+<section class="container">
+	<div class="row">
+		<div class="col-md-9">
+			<h1 class="text-center">JQuery Advanced News Ticker Demo (Text)</h1>
+			
+			<div id="nt-example1-container">
+				<i class="fa fa-arrow-up" id="nt-example1-prev"></i>
+				<ul id="nt-example1">
+			        <li>Etiam imperdiet volutpat libero eu tristique.</li>
+			        <li>Curabitur porttitor ante eget hendrerit adipiscing.</li>
+			        <li>Praesent ornare nisl lorem, ut condimentum lectus gravida ut.</li>
+			        <li>Nunc ultrices tortor eu massa placerat posuere.</li>
+			    </ul>
+			    <i class="fa fa-arrow-down" id="nt-example1-next"></i>
+			</div>
+		</div><!-- end of .col-md-8 -->
+		<aside class="col-md-3">
+			<h2 class="text-center">Image Demo</h2>
+
+			<div id="nt-example2-container">
+				<i id="nt-example2-prev"></i>
+				<ul id="nt-example2">
+			        <li><img src="images/anh1.jpg" width="900" height="1200" class="img-responsive"></li>
+			        <li><img src="images/anh2.jpg" width="900" height="1200" class="img-responsive"></li>
+			        <li><img src="images/anh3.jpg" width="900" height="1200" class="img-responsive"></li>
+			        <li><img src="images/anh4.jpg" width="900" height="1200" class="img-responsive"></li>
+			  </ul>
+			    <i id="nt-example2-next"></i>
+			</div>
+		</aside>
+    </div><!-- end of row -->
+</section><!-- end of main content (.container) -->
+
+<footer class="container-fluid">
+    <div class="container">
+		<div class="row">
+			<div class="col-md-10">
+				&copy; 2015, 2016 <a href="http://mylop.edu.vn/" title="Lớp học Web Design trực tuyến - MyLớp is MyLove" class="my_site"><span>MyLớp.edu.vn</span></a> Vui lòng ghi rõ nguồn khi chia sẻ các bài viết từ trang web này
+			</div>
+			<div id="social-icons" class="col-md-2">
+				<a href="https://www.facebook.com/mylop.edu.vn/" title="Facebook" target="_blank"><i class="social-icon fa fa-facebook-square"></i></a>
+	            <a href="http://twitter.com/mylop_edu_vn/" title="Twitter" target="_blank"><i class="social-icon fa fa-twitter-square"></i></a>
+	            <a href="https://plus.google.com/u/6/b/114513400476635223361/" title="Google Plus" target="_blank"><i class="social-icon fa fa-google-plus-square"></i></a>
+	            <a href="https://www.youtube.com/user/hocbootstrap/" title="YouTube" target="_blank"><i class="social-icon fa fa-youtube-square"></i></a>
+			</div>
+		</div><!-- end of .row -->
+    </div><!-- end of .container -->
+</footer><!-- end of footer (.container-fluid) -->
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="../../example-template/preus-theme/js/bootstrap.min.js"></script>   
+</body>
+</html>

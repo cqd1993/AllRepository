@@ -1,0 +1,125 @@
+
+/*.row .bgr-cl .pot-bai{
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	position: absolute;
+	margin-top: 20px;
+}*/
+.row #content-total{
+	border: solid 0px #eef2c9;
+	border-radius: 5px;
+	clear: both;
+}
+.row .bgr-cl .pot-bai .btn:hover{
+	background-color: #4aff97;
+	color: #fff;
+}
+.row .title-link{
+	background-color: #33cc66;
+	border-radius: 4px;
+	margin-bottom: 10px;
+    padding-left: 0px;
+    font-size: 18px;
+}
+.row .title-link .link{
+	float: left;
+	padding-right: 15px;
+	
+}
+.row .title-link .link a{
+	color: black;
+}
+.row .content-imformation .slishow, .row .content-imformation .slishow .col-md-12{
+	padding-left: 0px;
+	padding-right: 0px;
+	float: left;
+}
+.row .content-imformation{
+	border: solid 1px gray;
+	/*padding:15px;*/
+	border-radius: 4px;
+	padding:10px;
+	margin-bottom: 10px;
+	clear: both;
+}
+.row .content-imformation .btn:hover{
+	background-color: #4aff97;
+}
+.row .content-imformation .btn:hover a{
+	color: #fff;
+	text-decoration: none;
+}
+.row .thongtin-chitiet{
+	padding-top:10px;
+}
+.row .content-imformation .img-show{
+	float: left;
+}
+.row .content-imformation .img-show img{
+	max-width: 45%;
+	padding: 5px;
+}
+
+.row .icon span{
+	color: red;
+	font-size: 18px;
+}
+.row .icon span b{
+	color: yellow;
+}
+.content-imformation .left .glyphicon-chevron-left,
+.content-imformation .right .glyphicon-chevron-right{
+	visibility: hidden;
+}
+.content-imformation .left:hover .glyphicon-chevron-left,
+.content-imformation .right:hover .glyphicon-chevron-right{
+	visibility: visible;
+
+}
+
+.form-horizontal .form-group {
+	margin-right: 0px;
+	margin-left: 0px;
+	margin:10px;
+}
+.form-group .btn{
+	background-color: #33cc66;
+	float: left;
+	margin-left: 5px;
+}
+.form-group .btn a{
+	color: white;
+/*float: left;*/
+}
+
+.content-imformation .chitiet-coban .cost{
+	color: red;
+	font-size: 18px;
+}
+.content-imformation .chitiet-coban .ngaycc, .ngayhh{
+	color: #33cc66;
+	font-size: 18px;
+}
+
+.content-imformation .thongtin-chitiet .cost{
+	color: red;
+	font-size: 18px;
+}
+.content-imformation .thongtin-chitiet .dc{
+	color: #33cc66;
+	font-size: 18px;
+}
+#tk-aside img{
+	float: left;
+	max-width: 100%;
+	border: solid 1px #33cc66;
+}
+/*#tk-aside .img-content{
+	max-width: 100%;
+}*/
+.phantrang{
+	margin-left: 0%;
+	/*padding-left: -20%;*/
+}

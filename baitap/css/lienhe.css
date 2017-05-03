@@ -1,0 +1,33 @@
+.imformation-contact p a{
+	text-decoration: none;
+}
+span{
+	color: #68c6dd;
+	font-size: 18px;
+}
+legend{
+	font-size: 18px;
+	color: #68c6dd;
+}
+label span{
+	color: red;
+}
+.email .toi-email, .email #toi-email{
+	/*visibility: hidden;*/
+	display: none;
+}
+.form-group a{
+	text-decoration: none;
+	color: black;
+
+}
+.form-group #send-form:hover , #exit-form:hover{
+	background-color: #4aff97;
+	color: #fff;
+}
+.form-group #exit-form:hover a{
+	color: #fff;
+}
+/*.back-to-top{
+	
+}*/

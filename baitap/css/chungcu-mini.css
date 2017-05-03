@@ -1,0 +1,184 @@
+
+.main-menu{
+
+}
+
+.main-content{
+
+}
+.row .bgr-cl{
+	background-color:#fff;
+	/*padding-bottom: 15px;*/
+	border-radius: 5px;
+	padding: 8px 15px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+.row .bgr-cl .btn{
+	background-color: #33cc66;
+	color: #fff;
+	margin-top: 10px;
+	margin-bottom: 0px;	
+}
+
+.row .bgr-cl .btn a{
+	text-decoration: none;
+	color: #fff;
+}
+.row .bgr-cl .btn:hover{
+	background-color: red;
+	color: #fff;
+}
+.row .breadcrumb{
+	background-color: #fff;
+}
+.row{
+	padding-right: 5px;
+}
+.row #tk-aside{
+	/*border: solid 1px #eef2c9;*/
+	border-radius: 5px;
+	padding-top: 15px;
+	max-height: 100%;
+	background-color: #fff;
+}
+.row #tk-aside .col-md-12{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.row .col-md-4 .tk-aside{
+	float: left;
+	clear: both;
+	width: 100%;
+	
+}
+.row #row-md-8{
+	border: solid 1px #eef2c9;
+	border-radius: 5px;
+	/*padding: 5px;*/
+	/*float: left;*/
+}
+.img{
+	float: left;
+	padding:5px;
+
+}
+.img img{
+	max-width: 100%;
+	float: left;
+	/*float: left;*/
+}
+
+.row .chungcu-mini-title{
+	font-size: 18px;
+
+}
+.row .chungcu-mini-title span{
+	color: #2b2b2e;
+}
+.row .chungcu-mini-title span a{
+	color: #0013cf;
+	text-decoration: none;
+}
+.row .title{
+	color: #2b2b2e;
+}
+.row .img .btn-all{
+	margin-left: 0px;
+}
+.row .img .btn-all #xemchitiet:hover{
+	background-color: red;
+	color: #fff;
+}
+.row .btn-all #luu:hover{
+	background-color: #42484c;
+	color: #fff;
+
+}
+.row .btn-all #luu a{
+	color: #fff;
+}
+/*.row .btn-all #luu a{
+	text-decoration: none;
+	color: black;
+}*/
+
+/*.ke-ngang-1{
+	padding: 10px;
+	margin-left: -15px;
+}*/
+/*.row .bgr-cl2{
+	background-color: #dde0f0;
+	margin-left: 95px;
+	border-radius: 5px;
+	width: 100%;
+}*/
+
+.phantrang {
+	text-align: center; 
+	margin-left: 30%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.row .timkiem{
+	float: left;
+	padding-top: 25px;
+	max-width: 90px;
+	margin-top: 20px;
+}
+.row .timkiem:hover input{
+	background-color: #4aff97;
+	color: #fff;
+}
+
+.ke-ngang{
+	width: 100%;
+	height: 1px;
+	background-color: #d5e5fe;
+
+}
+footer{
+	background-color: #ebf9fe;
+	padding-top:20px;
+
+}
+footer span{
+	color: #014ada;
+	font-size: 16px;
+	font-weight: bolder;
+
+}
+footer ul{
+	list-style: none;
+	padding-left: 0 !important;
+}
+footer .text-center{
+	text-align: left;
+}
+footer .right{
+	text-align:left;
+}
+
+footer .icon-link a{
+	padding: 10px 5px 10px 0px;
+
+}

@@ -53,7 +53,7 @@
 	
 }
 .row #row-md-8{
-	border: solid 1px #eef2c9;
+	border: solid 0px #eef2c9;
 	border-radius: 5px;
 	/*padding: 5px;*/
 	/*float: left;*/
@@ -87,14 +87,21 @@
 	margin-left: 0px;
 }
 .row .img .btn-all #xemchitiet:hover{
-	background-color: red;
+	/*background-color: red;*/
+	background-color: #a9d7aa;
 	color: #fff;
 }
 .row .btn-all #luu:hover{
-	background-color: #42484c;
-	color: #fff;
+	/*background-color: #42484c;*/
+	background-color: #a9d7aa;;
+	/*color: #fff;*/
+	color: black;
 
 }
+/*.row .btn-all #luu:hover a{
+	color: black;
+	background-color:#a9d7aa;
+}*/
 .row .btn-all #luu a{
 	color: #fff;
 }

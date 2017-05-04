@@ -7,6 +7,9 @@
 	position: absolute;
 	margin-top: 20px;
 }*/
+.row #row-md-8{
+	border: solid 0px #eef2c9;
+}
 .row #content-total{
 	border: solid 0px #eef2c9;
 	border-radius: 5px;

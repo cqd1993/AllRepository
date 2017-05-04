@@ -175,9 +175,11 @@ header .right{
 	position: absolute;
 	bottom: 0;
 	/*top: 0;*/
-	left: 35px;
+	/*left: 35px;*/
 	/*margin-left: 15px;*/
-	right: 0;
+	/*right: 0;*/
+	/*padding: 0 10px;*/
+	padding-left: 20px;
 }
 .img> .content-img .btn-all{
 	margin-left: 0px;
@@ -190,7 +192,7 @@ header .right{
 	color: white;
 	text-decoration: none;
 	font-size: 25px;
-	font-weight: bolder;
+	/*font-weight: bolder;*/
 }
 .row .title{
 	color: #2b2b2e;
@@ -200,22 +202,22 @@ header .right{
 }
 .row .content-img p .img-side-left{
 	color: #fff;
-	font-size: 18px;
+	font-size: 16px;
 	/*font-weight: bolder;*/
 }
 .row .content-img span {
-	font-size: 18px;
+	font-size: 14px;
 	/*font-weight: bolder;*/
 }
 .row .content-img p .dt{
-	color: #0710f4;
-	font-size: 18px;
-	/*font-weight: bolder;*/
+	color: red;
+	font-size: 16px;
+	font-weight: bolder;
 }
 .row .content-img p .cost{
 	color: red;
-	font-size: 18px;
-	/*font-weight: bolder;*/
+	font-size: 16px;
+	font-weight: bolder;
 }
 
 .row .img .btn-all #xemchitiet{
@@ -223,21 +225,25 @@ header .right{
 	color: white;
 }
 .row .img .btn-all #xemchitiet:hover{
-	background-color: red;
-	color: #fff;
+	background-color: #a9d7aa;
+	color: black;
+}
+.row .img .btn-all #xemchitiet:hover a{
+	background-color: #a9d7aa;
+	color: black;
 }
 .row .img .btn-all #xemchitiet a{
 	text-decoration: none;
 	color: white;
 }
 .row .btn-all #luu{
-	background-color: #9535d4;
+	background-color: #50da00;
 }
 .row .btn-all #luu:hover{
-	background-color:#42484c;
+	background-color:#a9d7aa;
 }
 .row .btn-all #luu:hover a{
-	color: #fff;
+	color: #000;
 	/*background-color:#42484c;*/
 }
 .row .btn-all #luu a{

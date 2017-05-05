@@ -1,7 +1,7 @@
 .imformation-contact p a{
 	text-decoration: none;
 }
-span{
+.imformation-contact span, legend b{
 	color: #68c6dd;
 	font-size: 18px;
 }

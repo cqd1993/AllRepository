@@ -32,18 +32,18 @@ header .row .col-md-4 .register-login{
 	margin-right: 0px;
 	font-size: 16px;
 }
-header .row .col-md-4 .register-login #create-account a{
+header .row .col-md-4 .register-login #create-account a span{
 	/*float: left;
 	padding-right: 0px;*/
-	font-family: 'Glyphicons Halflings', sans-serif;
+	font-family:sans-serif;
 	font-weight: bolder;
 	/*letter-spacing: inherit; khoảng cách giữa các kí tự*/
 }
 header .row .col-md-4 .register-login #create-account:hover a{
 	text-decoration: none;
 }
-header .row .col-md-4 .register-login #login a{
-	font-family: 'Glyphicons Halflings', sans-serif;
+header .row .col-md-4 .register-login #login a span{
+	font-family: sans-serif;
 	font-weight: bolder;
 }
 header .row .col-md-4 .register-login #login:hover a{

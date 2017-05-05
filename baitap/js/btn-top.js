@@ -22,7 +22,7 @@
  // sliceshow
 
 $('#myCarousel').carousel({ 
-    interval:   4000    
+    interval:   3000    
 });
 
 
@@ -52,6 +52,6 @@ $('#myCarousel').carousel({
  // sliceshow
 
 $('#myCarousel-1').carousel({ 
-    interval:   4000    
+    interval:   3000    
 });
 

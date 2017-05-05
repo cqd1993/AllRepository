@@ -34,13 +34,20 @@ header .row .col-md-4 .register-login{
 }
 header .row .col-md-4 .register-login #create-account a{
 	/*float: left;
-
 	padding-right: 0px;*/
 	font-family: 'Glyphicons Halflings', sans-serif;
-
+	font-weight: bolder;
+	/*letter-spacing: inherit; khoảng cách giữa các kí tự*/
+}
+header .row .col-md-4 .register-login #create-account:hover a{
+	text-decoration: none;
 }
 header .row .col-md-4 .register-login #login a{
 	font-family: 'Glyphicons Halflings', sans-serif;
+	font-weight: bolder;
+}
+header .row .col-md-4 .register-login #login:hover a{
+	text-decoration: none;
 }
 /*header .row .col-md-4 .register-login #logout{
 	float: left;
@@ -118,22 +125,30 @@ header .right{
 	padding-bottom: 10px;
 }
 
+#timkiem-phongtro .form-control{
+	margin-bottom: 15px;
+}
 /*/////////////////////////////////////////////// noi dung
 */
 .row .bgr-cl{
 	padding-left: 0px;
 	padding-right: 0px;
+	margin-bottom: 15px;
+}
+.carousel{
+max-height: 300px;
+overflow: hidden;
 }
 .row .bgr-cl .carousel-inner img{
 	padding: 0px;
+	/*width: 780px;*/
 }
 .row .bgr-cl .pot-bai .btn{
 	margin-top: 20px;
 }
-/*.row .bgr-cl .pot-bai .btn:hover{
-	background-color: #33cc66;
-	color: #fff;
-}*/
+.row .bgr-cl .slice-padding{
+	padding: 0px;
+}
 /*.row{
 	padding-right: 5px;
 }*/
@@ -155,6 +170,7 @@ header .right{
 .row #row-md-12{
 	border: solid 1px #eef2c9;
 	border-radius: 5px;
+	padding: 15px;
 	/*padding: 5px;*/
 	/*float: left;*/
 }
@@ -162,7 +178,7 @@ header .right{
 	/*max-width: 25%;*/
 	height: 440px;
 	float: left;
-	padding:5px;
+	padding:15px;
 
 }
 .img img{
@@ -178,8 +194,8 @@ header .right{
 	/*left: 35px;*/
 	/*margin-left: 15px;*/
 	/*right: 0;*/
-	/*padding: 0 10px;*/
-	padding-left: 20px;
+	padding: 0 25px;
+	/*padding-left: 20px;*/
 }
 .img> .content-img .btn-all{
 	margin-left: 0px;
@@ -288,14 +304,17 @@ header .right{
 footer{
 	background-color: #ebf9fe;
 	/*background-color: gray;*/
-	padding-top:20px;
+	padding-top:25px;
 
 }
 footer span{
 	color: #014ada;
 	font-size: 16px;
-	font-weight: bolder;
+	/*font-weight: bolder;*/
 
+}
+footer .glyphicon{
+	padding: 5px;
 }
 footer ul{
 	list-style: none;
@@ -348,3 +367,6 @@ footer .right{
 .text-center .icon-social .fa-google-plus-square:hover{
 	color: red;
 }
+/*.navbar-nav .dropdown:hover .dropdown-menu li a{
+	visibility: visible;
+}*/

@@ -7,6 +7,15 @@
 	position: absolute;
 	margin-top: 20px;
 }*/
+@media only screen and (max-width: 768px) and (min-width: 120px){
+	.slishow{
+		margin-top: 15px;
+	}
+	#tk-aside{
+		max-height: 216px;
+		max-width: 234px;
+	}
+}
 
 .row #content-total{
 	border: solid 0px #eef2c9;

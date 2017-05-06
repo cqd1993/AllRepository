@@ -1,4 +1,20 @@
+@media only screen and (max-width: 768px) and (min-width: 120px){
+	.content-img0 .img-side-left{
+	/*color: #000;*/
+	/*font-size: 8px;*/
+	background-color: #000;
+	}
+	.img{
+		margin-bottom: 20px;
+		margin-top: 20px;
+		clear: both;
+	}
+	img{
+		max-width: 436px;
+		max-height:377px;
+	}
 
+}
 /*.row .bgr-cl .pot-bai{
 	left: 0;
 	right: 0;

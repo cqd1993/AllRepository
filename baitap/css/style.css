@@ -126,7 +126,10 @@ header .right{
 .row{
 	padding-bottom: 10px;
 }
-
+.row .col-md-12{
+	padding-right: 0px;
+	padding-left: 0px;
+}
 /*#timkiem-phongtro .form-control{
 	margin-bottom: 15px;
 }*/
@@ -183,21 +186,51 @@ overflow: hidden;
 	padding:15px;
 
 }
+.img{
+	margin-bottom: 20px;
+}
 .img img{
 	max-width: 100%;
 	float: left;
 	position: relative;
 	/*float: left;*/
 }
-.img> .content-img{
+.row .content-img{
+	border: solid 1px rgba(0, 188, 212, 0.46);
+	border-radius: 4px;
+}
+.img> .content-img0{
 	position: absolute;
 	bottom: 0;
-	/*top: 0;*/
+	padding: 0 25px;
+}
+@media only screen and (max-width: 768px) and (min-width: 120px){
+	.content-img0 .img-side-left{
+	/*color: #000;*/
+	/*font-size: 8px;*/
+	background-color: #000;
+	}
+	.img{
+		margin-bottom: 10px;
+		margin-top: 10px;
+		
+	}
+	img{
+		max-width: 436px;
+		max-height:377px;
+	}
+
+}
+ 
+.img> .content-img{
+	position: relative;
+	bottom: 0;
+	top: 0;
 	/*left: 35px;*/
 	/*margin-left: 15px;*/
 	/*right: 0;*/
-	padding: 0 25px;
-	/*padding-left: 20px;*/
+	/*padding: 0 25px;*/
+	padding-left: 10px;
 }
 .img> .content-img .btn-all{
 	margin-left: 0px;
@@ -218,16 +251,35 @@ overflow: hidden;
 .row .img .btn-all{
 	margin-left: 0px;
 }
+.row .content-img0 p .img-side-left{
+	color: #fff;
+	font-size: 16px;
+	/*font-weight: bolder;*/
+}
 .row .content-img p .img-side-left{
 	color: #fff;
 	font-size: 16px;
+	/*font-weight: bolder;*/
+}
+.row .content-img0 span {
+	font-size: 14px;
 	/*font-weight: bolder;*/
 }
 .row .content-img span {
 	font-size: 14px;
 	/*font-weight: bolder;*/
 }
+.row .content-img0 p .dt{
+	color: red;
+	font-size: 16px;
+	font-weight: bolder;
+}
 .row .content-img p .dt{
+	color: red;
+	font-size: 16px;
+	font-weight: bolder;
+}
+.row .content-img0 p .cost{
 	color: red;
 	font-size: 16px;
 	font-weight: bolder;

@@ -35,6 +35,10 @@
 	background-color: #4aff97;
 	color: #fff;
 }
+.row .bgr-cl .pot-bai .btn:hover a{
+	background-color: #4aff97;
+	color: #000;
+}
 .row .title-link{
 	background-color: #33cc66;
 	border-radius: 4px;

@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Đăng nhập</title>
+    <title>post-editor</title>
 
     <!-- Bootstrap -->
     <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/icon.css">
-    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/post-editor.css">
     <link rel="stylesheet" type="text/css" href=" css\font-awesome.min.css">
    
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -41,14 +41,14 @@
             <div class="col-md-4 col-sm-12 col-xs-12">
               <div class="register-login col-md-offset-8">
                 <div id="create-account">
-                  <a href="create-account.html" class="glyphicon glyphicon-user"> <span>Đăng ký</span></a>
+                  <a href="create-account.html" class="glyphicon glyphicon-user"><span> Đăng ký<span> </a>
                 </div>
                 <div id="login">
                   <a href="login.html" class="glyphicon glyphicon-log-in"> <span>Đăng nhập</span></a>
                 </div>
-                <!-- <div id="logout">
-                  <a href="#" class="glyphicon glyphicon-log-out">Thoát</a>
-                </div> -->
+                <div id="logout">
+                  <a href="index.html" class="glyphicon glyphicon-log-out"><span>Thoát</span></a>
+                </div>
               </div>
             </div>
           </div> <!-- end col-md-12 -->
@@ -111,54 +111,75 @@
           </section>
       </div> <- end row 1 --> 
       <div class="row">
-        <section class="col-md-12 col-xs-12 col-sm-12">
+        <section class="col-md-12">
           <legend></legend>
           <div class="content-login">
             <form class="form-horizontal" action="index.html" method="get">
             <fieldset>
-              <legend><b class="col-md-2"></b><b> Đăng Nhập</b></legend>
-           
-    
-            <div class="form-group email">
-                <label for="inputEmail3" class="col-md-3 control-label">Email<span>*</span></label>
-                <div class="col-md-5">
-                  <input type="email" class="form-control" id="inputEmail3" placeholder="Nhập Email" required="required">
-                </div>
-            </div>
+              <legend><b class="col-md-12 col-xs-12 col-sm-12"></b><b> Post/editor </b></legend>
+              <div class="content">
+                <table class="table">
+                  <tbody class="tbody">
+                    <thead>
+                      <th>STT</th>
+                      <th>Họ tên</th>
+                      <th>Số điện thoại</th>
+                      <th>Địa chỉ</th>
+                      <th>Email</th>
+                      <th>Tiêu đề nội dung</th>
+                      <th>Ngày đăng</th>
+                      <th>Giờ đăng</th>
+                      <th>Ngày hết hạn</th>
+                      <th>Diện tích(m2)</th>
+                      <th>Giá(vnđ/tháng)</th>
+                      <th>Ảnh</th>
+                      <th>Nội dung đăng</th>
+                      <th>sửa</th>
+                      <th>Xóa</th>
+
+                    </thead>
+                    <tr>
+                      <td>1</td>
+                      <td>Nguyễn Văn A</td>
+                      <td>19001009</td>
+                      <td>techmaster</td>
+                      <td>nva@gmail.com</td>
+                      <td>Nhà cho thuê tầng 5 có thang máy</td>
+                      <td>09/09/2017</td>
+                      <td>17:00:00</td>
+                      <td></td>
+                      <td>25</td>
+                      <td>5tr</td>
+                      <td><img src="images/nguyencan/nguyencan3/a1.jpg"></td>
+                      <td>nội dung đăng ở đây</td>
+                      <td><a href="dangbai.html"><span class="glyphicon glyphicon-pencil sua"></span></a></td>
+                      <td><a href="index.html"><span class="glyphicon glyphicon-remove xoa"></span></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
 
             <div class="form-group">
-                <label for="password" class="col-md-3 control-label">Mật khẩu <span>*</span></label>
-                <div class="col-md-5">
-                  <input type="password" class="form-control" placeholder="Nhập mật khẩu" id="password" required="required">
-                </div>
-            </div>
-
-            <div class="checkbox col-md-4 col-sm-2 control-label">
-              <label>
-                <input type="checkbox"> ghi nhớ
-              </label>
-            </div>
-            <br>
-            <div class="form-group">
-              <div class="col-sm-offset-3 col-md-5">
-                <button type="submit" class="btn btn-default" id="login-form"><a href="index.html">Đăng nhập</a></button>
+              <div class="col-sm-offset-4 col-md-5">
+                <button type="submit" class="btn btn-default" id="login-form"><a href="index.html">Đăng bài</a></button>
                   <button type="submit" class="btn btn-default" id="logout-form"><a href="index.html">Quay lại</a>
                 </button>
               </div>
             </div>
-            <div class="form-group">
-              <div class="col-sm-offset-3 col-md-5">
-                <div class="lienket-create-account">
-                  <div class="facebook facebook-goole">
-                    <a href="https://www.facebook.com/"><p class="fa fa-facebook-official"></p></a>
-                  </div>
-                  <div class="google facebook-goole">
-                    <a href="https://www.google.com/"><p class="fa fa-google-plus-official"></p></a>
+        </div>
+              <div class="form-group">
+                <div class="col-sm-offset-4 col-md-5">
+                  <div class="lienket-create-account">
+                    <div class="facebook facebook-goole">
+                      <a href="https://www.facebook.com/"><p class="fa fa-facebook-official"></p></a>
+                    </div>
+                    <div class="google facebook-goole">
+                      <a href="https://www.google.com/"><p class="fa fa-google-plus-official"></p></a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            </div>
+            
             </fieldset>
           </form>
         </div>
@@ -264,7 +285,7 @@
     </div><!-- end container-fluid -->
       
   </footer>
-  <!-- <div class="row"> 
+ <!--  <div class="row"> 
     <div class="footer col-md-12 col-sm-12 col-xs-12">
       <div class="col-md-offset-4 col-sm-offset-4">
         <a href="index.html"><img src="images/map.png" title="home page" /></a>

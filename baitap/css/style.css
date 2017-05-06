@@ -49,6 +49,17 @@ header .row .col-md-4 .register-login #login a span{
 header .row .col-md-4 .register-login #login:hover a{
 	text-decoration: none;
 }
+
+header .row .col-md-4 .register-login #logout a{
+	color: #33cc66;
+}
+header .row .col-md-4 .register-login #logout a span{
+	font-family: sans-serif;
+	font-weight: bolder;
+}
+header .row .col-md-4 .register-login #logout:hover a{
+	text-decoration: none;
+}
 /*header .row .col-md-4 .register-login #logout{
 	float: left;
 }

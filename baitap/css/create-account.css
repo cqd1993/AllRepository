@@ -34,12 +34,15 @@ label span{
 	background-color: #33cc66;
 }
 .form-group #login-form:hover , #logout-form:hover{
-	background-color: red;
-	color: #fff;
+	background-color: #a9d7aa;
+	/*color: #000;*/
 }
-.form-group #exit-form:hover a{
-	color: #fff;
+.form-group #login-form:hover a, #logout-form:hover a{
+	color: #000;
 }
+/*.form-group #exit-form:hover a{
+	color: #000;
+}*/
 .lienket-create-account .facebook-goole{
 	/*width: 50px;
 	height: 50px;*/

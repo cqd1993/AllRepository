@@ -1,0 +1,71 @@
+/*.col-xs-12{
+	float: left;
+}*/
+legend b{
+	color: #33cc66;
+}
+label span{
+	color: red;
+	font-weight: bolder;
+}
+
+/*.form-control .upanh input:hover{
+	color: #33cc66;
+	background-color: red;
+}*/
+.form-group .btn{
+	background-color: #33cc66;
+}
+.form-group .btn a{
+	color: #fff;
+	text-decoration: none;
+}
+.form-group .btn:hover{
+	color: #000;
+	background-color: #a9d7aa;
+}
+.form-group .btn:hover a{
+	color: #000;
+}
+.form-group .lienket-create-account{
+	font-size: 40px;
+}
+.form-group .facebook-goole{
+	float: left;
+	padding-right: 10px;
+}
+.form-group .google:hover p{
+	color: red;
+} 
+#create-account, #login{
+	display: none;
+}
+/*
+///////CSS BÀI SỬA */
+.content .table td img{
+	max-width: 25px;
+	max-height: 25px;
+}
+.content .table{
+	border: solid 1px #33cc66;
+	float: right;
+	position: relative;
+
+}
+.content .table th{
+	border: solid 1px #33cc66;
+	position: relative;
+}
+.content .table> td{
+	border: solid 1px #33cc66;
+	position: absolute;
+	float: left;
+}
+.content .table tr td{
+	border: solid 1px #33cc66;
+	width: 8%;
+}
+.content .table .sua, .xoa{
+	float: left;
+	
+}

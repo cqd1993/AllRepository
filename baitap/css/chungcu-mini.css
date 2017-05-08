@@ -1,4 +1,25 @@
+@media only screen and (max-width: 768px) and (min-width: 120px){
+	.slishow{
+		margin-top: 15px;
+	}
+	#tk-aside, #tk-aside-qc{
+		max-height: 216px;
+		max-width: 234px;
+	}
+	.row #tk-aside{
+		border: 0px;
+	}
+	.img{
+		margin-bottom: 100px;
+		border: 0px;
+		margin-bottom: 0px;
 
+	}
+	.img> .content-img{
+		border: 0px;
+	}
+
+}
 .main-menu{
 
 }
@@ -14,6 +35,9 @@
 	background-color: #4aff97;
 	color: #000;
 }*/
+.col-md-offset-12{
+	margin-left: 0px;
+}
 .row .bgr-cl{
 	background-color:#fff;
 	/*padding-bottom: 15px;*/
@@ -47,7 +71,7 @@
 	padding-right: 5px;
 }
 .row #tk-aside{
-	/*border: solid 1px #eef2c9;*/
+	border: solid 1px rgba(0, 188, 212, 0.46);
 	border-radius: 5px;
 	padding-top: 15px;
 	max-height: 100%;

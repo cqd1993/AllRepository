@@ -1,4 +1,6 @@
-
+.col-md-offset-12{
+	margin-left: 0px;
+}
 /*.row .bgr-cl .pot-bai{
 	left: 0;
 	right: 0;
@@ -11,10 +13,25 @@
 	.slishow{
 		margin-top: 15px;
 	}
-	#tk-aside{
-		max-height: 216px;
-		max-width: 234px;
+	.row #tk-aside{
+		border: 0px;
+    	max-width: 100%;
 	}
+	#tk-aside-qc{
+		max-width: 100%;
+    	margin-bottom: 70px;
+	}
+	.row #tk-aside{
+		border: 0px;
+	}
+	.img{
+		margin-bottom: 100px;
+		border: 0px;
+	}
+	.img> .content-img{
+		border: 0px;
+	}
+
 }
 
 .row #content-total{
@@ -34,6 +51,7 @@
     font-size: 18px;
 }
 .row .title-link .link{
+	padding-top: 5px;
 	float: left;
 	padding-right: 15px;
 	
@@ -121,7 +139,8 @@
 	color: #33cc66;
 	font-size: 18px;
 }
-#tk-aside img{
+#tk-aside-qc img{
+	margin: 10px 0px;
 	float: left;
 	max-width: 100%;
 	border: solid 1px #33cc66;

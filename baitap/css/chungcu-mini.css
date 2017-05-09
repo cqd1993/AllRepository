@@ -159,8 +159,13 @@
 .phantrang {
 	text-align: center; 
 	margin-left: 30%;
-
+	margin-top: -10px;
 }
+/*.phantrang{
+	margin-left: 0%;
+	padding-left: -20%;
+	margin-top: -50px;
+}*/
 
 
 

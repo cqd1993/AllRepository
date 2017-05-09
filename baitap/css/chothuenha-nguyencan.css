@@ -143,10 +143,11 @@
 /*#tk-aside .img-content{
 	max-width: 100%;
 }*/
-/*.phantrang{
+.phantrang{
 	margin-left: 0px;
-	padding-left: -20%;
+	/*padding-left: -20%;*/
+	margin-top: -50px;
 }
-.pagination>li{
-	/*margin-left: 50px;
+/*.pagination{
+	margin-top: -50px;
 }*/

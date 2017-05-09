@@ -21,12 +21,19 @@ label span{
 	color: black;
 
 }
+.form-group #send-form , #exit-form{
+	background-color: #33cc66;
+	color: white;
+}
 .form-group #send-form:hover , #exit-form:hover{
-	background-color: #4aff97;
-	color: #fff;
+	background-color: #a9d7aa;
+	color: black;
+}
+.form-group #exit-form a{
+	color: white;
 }
 .form-group #exit-form:hover a{
-	color: #fff;
+	color: black;
 }
 /*.back-to-top{
 	

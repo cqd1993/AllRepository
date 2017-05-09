@@ -157,12 +157,12 @@
               </div>
 
               <div class="content-right col-md-6">
-                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                <!-- <div class="form-group col-md-12 col-sm-12 col-xs-12">
                     <label for="time" class="col-md-3 control-label">Giờ đăng<span>*</span></label>
                     <div class="col-md-9">
                       <input type="time" class="form-control" placeholder="Nhập giờ đăng" id="time" required="required">
                     </div>
-                </div>
+                </div> -->
                 <div class="form-group col-md-12 col-sm-12 col-xs-12">
                     <label for="ngaykt" class="col-md-3 control-label">Nhập ngày hết hạn<span></span></label>
                     <div class="col-md-9">
@@ -181,23 +181,33 @@
                       <input type="text" class="form-control" placeholder="Nhập giá tiền" id="gia" required="required">
                     </div>
                 </div>
-                <div class="form-group col-md-12 col-sm-12 col-xs-12 upanh">
-                    <label for="anh" class="col-md-3 control-label">Ảnh<span>*</span></label>
-                    <div class="col-md-3">
-                      <input type="button" class="form-control" placeholder="Nhập ngày đăng" id="upanh" value="up ảnh ..." required="required">
+                <div class="form-group col-md-12 col-sm-12 col-xs-12 upanh upvideo">
+                  <div class="form-group col-md-6 col-sm-12 col-xs-12 upanh">
+                      <label for="anh" class="col-md-3 control-label">Ảnh<span>*</span></label>
+                    
+                      <div class="col-md-6" id="upanh">
+                        <input type="button" class="form-control" placeholder="upanh..." id="upanh" value="up ảnh ..." required="required">
                     </div>
+                </div>
+               
+                  <div class="form-group col-md-6 col-sm-12 col-xs-12 upvideo">
+                      <label for="video" class="col-md-6 control-label">Or Video<span></span></label>
+                      <div class="col-md-6">
+                        <input type="button" class="form-control" placeholder="up video" id="video" value="up video ..." required="required">
+                      </div>
+                  </div>
                 </div>
                 <div class="form-group col-md-12 col-sm-12 col-xs-12">
                     <label for="ngaydang" class="col-md-3 control-label">Nội dung đăng<span>*</span></label>
                     <div class="col-md-9">
-                      <textarea class="col-md-12 form-control" name="noidung" id="nd" cols="30" rows="6" placeholder="    nhập nội dung cần đăng về thông tin chi tiết"></textarea>
+                      <textarea class="col-md-12 form-control" name="noidung" id="nd" cols="30" rows="6" placeholder="    Nhập nội dung cần đăng về thông tin chi tiết"></textarea>
                     </div>
                 </div> 
               </div>
 
                 <div class="form-group">
                   <div class="col-sm-offset-4 col-md-5">
-                    <button type="submit" class="btn btn-default" id="login-form"><a href="editor.html">Đăng bài</a></button>
+                    <button type="submit" class="btn btn-default" id="login-form"><a href="content-post.html">Đăng bài</a></button>
                       <button type="submit" class="btn btn-default" id="logout-form"><a href="index.html">Quay lại</a>
                     </button>
                   </div>
@@ -263,6 +273,12 @@
                   <li><span class="glyphicon glyphicon-ok-circle"></span>
                   <a href="login.html">Đăng bài</a></li>
                 </ul>
+                <div class="text-xh"> Map</div>
+                <div class="map">
+                  <p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7446.748830347603!2d105.785633!3d21.057703!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1493622001906" width="300" height="200" frameborder="0" style="border:1" allowfullscreen title="Map goole"></iframe>
+                  </p>
+                </div>
               <!-- <div class="text-xh">
                   Support operating system:
                 </div>
@@ -306,12 +322,12 @@
                   </div> -->
               </span>  
               
-              <div class="text-xh"> Map</div>
+              <!-- <div class="text-xh"> Map</div>
               <div class="map">
                 <p>
                   <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7446.748830347603!2d105.785633!3d21.057703!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1493622001906" width="300" height="200" frameborder="0" style="border:1" allowfullscreen title="Map goole"></iframe>
                 </p>
-              </div>
+              </div> -->
            
 
             </div>

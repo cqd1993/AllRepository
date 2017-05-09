@@ -97,6 +97,10 @@
 .row .icon span b{
 	color: yellow;
 }
+.row .icon span .fa{
+	color: #041a96;
+	font-size: 18px;
+}
 .content-imformation .left .glyphicon-chevron-left,
 .content-imformation .right .glyphicon-chevron-right{
 	visibility: hidden;
@@ -151,4 +155,8 @@
 .phantrang{
 	margin-left: 0%;
 	/*padding-left: -20%;*/
-}
+	/*margin-top: -50px;
+}*/
+/*.pagination{
+	margin-top: -50px;
+}*/

@@ -36,7 +36,7 @@
               </div>
             </div>
             <div class="col-md-4 col-sm-12 col-xs-12">
-              <a href="login.html"><img src="images/logo-mienphi.gif"/></a>
+              <a href="login.html"></a>
             </div>
             <div class="col-md-4 col-sm-12 col-xs-12">
               <div class="register-login col-md-offset-8">
@@ -114,45 +114,50 @@
         <section class="col-md-12">
           <legend></legend>
           <div class="content-login">
-            <form class="form-horizontal" action="index.html" method="get">
+          <form class="form-horizontal" id="form_create_login" action="hosocanhan.html" method="get" >
             <fieldset>
               <legend><b class="col-md-2"></b><b> Đăng ký</b></legend>
+        
               <div class="form-group">  
                 <label for="hoten" class="col-md-4 control-label">Họ tên <span>*</span></label>
                 <div class="col-md-5">
-                  <input type="text" class="form-control" placeholder="Nhập họ tên" id="hoten" required="required">
+                  <input type="text" class="form-control" placeholder="Nhập họ tên" id="hoten" required="required" maxlength="50" minlength="6">
                 </div>
               </div>
             <div class="form-group">
                 <label for="password" class="col-md-4 control-label">Mật khẩu <span>*</span></label>
                 <div class="col-md-5">
                   <input type="password" class="form-control" placeholder="Nhập mật khẩu" id="password" required="required">
+                  <span></span>
                 </div>
             </div>
             <div class="form-group">
-                <label for="password" class="col-md-4 control-label">Nhập lại mật khẩu <span>*</span></label>
+                <label for="repassword" class="col-md-4 control-label">Nhập lại mật khẩu <span>*</span></label>
                 <div class="col-md-5">
-                  <input type="password" class="form-control" placeholder="Nhập lại mật khẩu" id="password" required="required">
+                  <input type="password" class="form-control" placeholder="Nhập lại mật khẩu" id="repassword" required="required" minlength="8" maxlength="30">
+                  <span></span>
                 </div>
             </div>
             <div class="form-group email">
-                <label for="inputEmail3" class="col-md-4 control-label">Email<span>*</span></label>
+                <label for="email" class="col-md-4 control-label">Email<span>*</span></label>
                 <div class="col-md-5">
-                  <input type="email" class="form-control" id="inputEmail3" placeholder="Nhập Email" required="required">
+                  <input type="email" class="form-control" id="email" placeholder="Nhập Email" required="required" maxlength="50">
+                  <span></span> 
                 </div>
             </div>
             <div class="form-group">
                 <label for="telephone" class="col-md-4 control-label">Số điện thoại<span>*</span></label>
                 <div class="col-md-5">
-                  <input type="tel" class="form-control" placeholder="Nhập số điện thoại" id="telephone" required="required">
+                  <input type="tel" class="form-control" placeholder="Nhập số điện thoại" id="telephone" required="required" maxlength="11">
+                  <span></span>
                 </div>
             </div>
 
             <div class="form-group">
               <div class="col-sm-offset-4 col-md-5">
-                <button type="submit" class="btn btn-default" id="login-form"><a href="index.html">Đăng ký</a></button>
-                  <button type="submit" class="btn btn-default" id="logout-form"><a href="index.html">Quay lại</a>
-                </button>
+                <input type="submit" class="btn btn-default" id="login-form" value="Đăng ký">
+                  <input type="submit" class="btn btn-default" id="logout-form" value="Quay lại">
+                
               </div>
             </div>
             <div class="form-group">
@@ -235,7 +240,7 @@
             <span>Liên hệ</span>
               <ul>
                   <li><span class="glyphicon glyphicon-ok-circle"></span>
-                  <a href="#" >Tell:<span class="glyphicon glyphicon-earphone"></span> <span> 01669440114 or 0978302115</span></a>
+                  <a href="#" >Tell:<span class="glyphicon glyphicon-earphone"></span> <span> 01669440114 or 0978203115</span></a>
                   </li>
                   <li><span class="glyphicon glyphicon-ok-circle"></span>
                   <a href="#">Email:phongtrovn@gmail.com</a></li>
@@ -288,9 +293,11 @@
     </div>
   </div> -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="jquery\jquery-3.2.0.min.js"></script>
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-    <script src="js/javascript.js"></script>
+    <script type="text/javascript" src="jquery\jquery-ui-1.12.1\jquery-ui.min.js"></script>
+    <script src="js/create_login.js"></script>
   </body>
 </html>

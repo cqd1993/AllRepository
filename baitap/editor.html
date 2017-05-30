@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Tạo Đăng Bài</title>
+    <title>Editor</title>
 
     <!-- Bootstrap -->
     <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
@@ -36,7 +36,7 @@
               </div>
             </div>
             <div class="col-md-4 col-sm-12 col-xs-12">
-              <a href="login.html"><img src="images/logo-mienphi.gif"/></a>
+              <a href="login.html"></a>
             </div>
             <div class="col-md-4 col-sm-12 col-xs-12">
               <div class="register-login col-md-offset-8">
@@ -118,12 +118,19 @@
             <fieldset>
               <legend><b class="col-md-12 col-xs-12 col-sm-12"></b><b> Sửa Bài</b></legend>
               <div class="content-left col-md-6">
-                <div class="form-group col-md-12 col-xs-12 col-sm-12">  
+                <!-- <div class="form-group col-md-12 col-xs-12 col-sm-12">  
                   <label for="hoten" class="col-md-3 control-label">Họ tên <span>*</span></label>
                   <div class="col-md-9">
                     <input type="text" class="form-control" placeholder="Nhập họ tên" id="hoten" required="required">
                   </div>
+                </div> -->
+                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                    <label for="title" class="col-md-3 control-label">Nhập tiêu đề<span>*</span></label>
+                    <div class="col-md-9">
+                      <input type="tel" class="form-control" placeholder="Nhập tiêu đề cần đăng" id="title" required="required">
+                    </div>
                 </div>
+
                 <div class="form-group col-md-12 col-xs-12 col-sm-12">
                     <label for="sdt" class="col-md-3 control-label">Số điện thoại <span>*</span></label>
                     <div class="col-md-9">
@@ -136,79 +143,82 @@
                       <input type="text" class="form-control" placeholder="Nhập địa chỉ" id="dc" required="required">
                     </div>
                 </div>
-                <div class="form-group email col-md-12 col-xs-12 col-sm-12">
+                <!-- <div class="form-group email col-md-12 col-xs-12 col-sm-12">
                     <label for="email" class="col-md-3 control-label">Email<span>*</span></label>
                     <div class="col-md-9">
                       <input type="email" class="form-control" id="email" placeholder="Nhập Email" required="required">
                     </div>
-                </div>
-                <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                    <label for="title" class="col-md-3 control-label">Nhập tiêu đề<span>*</span></label>
-                    <div class="col-md-9">
-                      <input type="tel" class="form-control" placeholder="Nhập tiêu đề cần đăng" id="title" required="required">
-                    </div>
-                </div>
-                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                </div> -->
+                
+                <!-- <div class="form-group col-md-12 col-sm-12 col-xs-12">
                     <label for="ngaydang" class="col-md-3 control-label">Ngày đăng<span>*</span></label>
                     <div class="col-md-9">
                       <input type="Date" class="form-control" placeholder="Nhập ngày đăng" id="ngaydang" required="required">
                     </div>
                 </div>
-              </div>
+              </div> -->
 
-              <div class="content-right col-md-6">
+              <!-- <div class="content-right col-md-6"> -->
                 <!-- <div class="form-group col-md-12 col-sm-12 col-xs-12">
                     <label for="time" class="col-md-3 control-label">Giờ đăng<span>*</span></label>
                     <div class="col-md-9">
                       <input type="time" class="form-control" placeholder="Nhập giờ đăng" id="time" required="required">
                     </div>
                 </div> -->
-                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                <!-- <div class="form-group col-md-12 col-sm-12 col-xs-12">
                     <label for="ngaykt" class="col-md-3 control-label">Nhập ngày hết hạn<span></span></label>
                     <div class="col-md-9">
                       <input type="Date" class="form-control" placeholder="Nhập ngày kết thúc" id="ngaykt">
                     </div>
-                </div>
+                </div> -->
                 <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                    <label for="number" class="col-md-3 control-label">Diện tích(m2)<span>*</span></label>
+                    <label for="number" class="col-md-3 control-label">Diện tích (m2)<span>*</span></label>
                     <div class="col-md-9">
                       <input type="number" class="form-control" placeholder="Nhập diện tích ngôi nhà" id="number" required="required">
                     </div>
                 </div>
                 <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                    <label for="gia" class="col-md-3 control-label">Giá(vnđ/tháng)<span>*</span></label>
+                    <label for="gia" class="col-md-3 control-label">Giá (vnđ/tháng)<span>*</span></label>
                     <div class="col-md-9">
                       <input type="text" class="form-control" placeholder="Nhập giá tiền" id="gia" required="required">
                     </div>
                 </div>
-                <div class="form-group col-md-12 col-sm-12 col-xs-12 upanh upvideo">
-                  <div class="form-group col-md-6 col-sm-12 col-xs-12 upanh">
-                      <label for="anh" class="col-md-3 control-label">Ảnh<span>*</span></label>
-                    
-                      <div class="col-md-6" id="upanh">
-                        <input type="button" class="form-control" placeholder="upanh..." id="upanh" value="up ảnh ..." required="required">
-                    </div>
-                </div>
-               
-                  <div class="form-group col-md-6 col-sm-12 col-xs-12 upvideo">
-                      <label for="video" class="col-md-6 control-label">Or Video<span></span></label>
+              </div>
+              <div class="content-right col-md-6">
+                <div class="form-group col-md-12 col-sm-12 col-xs-12 video">
+                      <label for="anh" class="col-md-3 control-label"> Ảnh đại diện<span>*</span></label>
                       <div class="col-md-6">
-                        <input type="button" class="form-control" placeholder="up video" id="video" value="up video ..." required="required">
+                        <input type="file" class="form-control" title ="choose ảnh" id="myAnh_daidien" size="50" onchange="myFunction_Anhdaidien()" value="up ảnh ..." required="required">
+                      </div>
+                      <p id="file_anh_daidien"></p>
+                  </div>
+                <div class="form-group col-md-12 col-sm-12 col-xs-12 video">
+                      <label for="anh" class="col-md-3 control-label"> Ảnh slice<span>*</span></label>
+                      <div class="col-md-6">
+                        <input type="file" class="form-control" title ="choose ảnh" id="myAnh_slice" multiple="multiple" size="50" onchange="myFunction_Anhslice()" value="up ảnh ..." required="required">
+                      </div>
+                     <!--  <p id="file_anh_slice"></p> -->
+                  </div>
+               <p id="file_anh_slice"></p>
+                  <div class="form-group col-md-12 col-sm-12 col-xs-12 video">
+                      <label for="video" class="col-md-3 control-label"> Video<span></span></label>
+                      <div class="col-md-6">
+                        <input type="file" class="form-control" id="video" accept="video/*" title="video choose" value="up video ..." required="required">
                       </div>
                   </div>
-                </div>
+
                 <div class="form-group col-md-12 col-sm-12 col-xs-12">
                     <label for="ngaydang" class="col-md-3 control-label">Nội dung đăng<span>*</span></label>
                     <div class="col-md-9">
-                      <textarea class="col-md-12 form-control" name="noidung" id="nd" cols="30" rows="6" placeholder="    Nhập nội dung cần đăng về thông tin chi tiết"></textarea>
+                      <textarea class="col-md-12 form-control" name="noidung" id="nd" cols="30" rows="6" placeholder="    Nhập nội dung cần đăng về thông tin chi tiết" title="nhập nội dung cần đăng"></textarea>
                     </div>
                 </div> 
               </div>
 
                 <div class="form-group">
                   <div class="col-sm-offset-4 col-md-5">
-                    <button type="submit" class="btn btn-default" id="login-form"><a href="editor.html">Đăng bài</a></button>
-                      <button type="submit" class="btn btn-default" id="logout-form"><a href="content-post.html">Quay lại</a>
+                    <button type="submit" class="btn btn-default" id="login-form"><a href="content-post.html">Đăng bài</a></button>
+                      <button type="submit" class="btn btn-default" id="logout-form"><a href="index.html">Quay lại</a>
                     </button>
                   </div>
                 </div>
@@ -293,7 +303,7 @@
             <span>Liên hệ</span>
               <ul>
                   <li><span class="glyphicon glyphicon-ok-circle"></span>
-                  <a href="#" >Tell:<span class="glyphicon glyphicon-earphone"></span> <span> 01669440114 or 0978302115</span></a>
+                  <a href="#" >Tell:<span class="glyphicon glyphicon-earphone"></span> <span> 01669440114 or 0978203115</span></a>
                   </li>
                   <li><span class="glyphicon glyphicon-ok-circle"></span>
                   <a href="#">Email:phongtrovn@gmail.com</a></li>
@@ -349,6 +359,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-    <script src="js/javascript.js"></script>
+    <script src="js/img.js"></script>
   </body>
 </html>

@@ -5,6 +5,12 @@
 	color: #68c6dd;
 	font-size: 18px;
 }
+.imformation-contact .glyphicon-share-alt ,
+ .donggop-ykien .glyphicon-share-alt, .glyphicon-record
+
+ {
+	padding-right: 10px;
+}
 legend{
 	font-size: 18px;
 	color: #68c6dd;

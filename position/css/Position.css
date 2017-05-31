@@ -28,12 +28,12 @@ body{
 	display: inline-block;
 
 }
-@keyframes title_link{
+/*@keyframes title_link{
 	0%{background-color: black; color: red; left: 0px; top: 0px;}
 	25%{background-color: white; color: blue; left: 190px; top: 0px;}
 	50%{background-color: pink; color: green;left:190px;  }
 	75%{background-color: gray; color: yellow; left: 0px;}
-}
+}*/
 #th_a a{
 	animation: title_link 5s ease infinite;
 	/*animation-duration: 2s;/* thời gian cho thay đổi*/
@@ -67,7 +67,8 @@ h1{
 .a:hover img{
 	opacity: 0.5;
 	/*transform: translate(0, 4px);*/
-	transform: scale(1.2);
+	/*transform: scale(1.1);*/
+
 
 }
 

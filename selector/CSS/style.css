@@ -1,0 +1,40 @@
+.wap{
+	box-sizing: border-box;
+	margin: auto;
+	max-width: 1000px;
+}
+.title__main{
+	font-size: 18px;
+}
+.title__main, .title__bove{
+	font-weight: bolder;
+	text-align: center;
+
+}
+.title__bove{
+	font-size: 14px;
+}
+h1{
+	text-align: center;
+	padding: 20px;
+	font-size: 24px;
+}
+
+.main__content span{
+	font-weight: bolder;
+
+}
+.main__content p{
+	font-size: 14px;
+}
+
+.wap__footer{
+	font-weight: bolder;
+	text-align: right;
+	padding-top: 30px;
+	padding-right: 10px;
+	margin-bottom: 10%;
+}
+.wap__footer> .center{
+	margin-right: 50px;
+}

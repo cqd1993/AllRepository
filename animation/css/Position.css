@@ -1,0 +1,130 @@
+
+body{
+	background-color: gray;
+}
+.wap{
+	width: 1000px;
+	box-sizing: border-box;
+	margin: auto;
+
+}
+#banner img{
+	width: 1000px;
+	height: 300px;
+}
+#th_a{
+	position: relative;
+	text-align: center;
+	background-color: white;
+	padding: 15px 0;
+	border-bottom: 1px solid red;
+}
+#th_a a img{
+	border-radius: 50%;
+	max-width: 60px;
+}
+#th_a a{
+	padding: 15px;
+	display: inline-block;
+
+}
+/*@keyframes title_link{
+	0%{background-color: black; color: red; left: 0px; top: 0px;}
+	25%{background-color: white; color: blue; left: 190px; top: 0px;}
+	50%{background-color: pink; color: green;left:190px;  }
+	75%{background-color: gray; color: yellow; left: 0px;}
+}*/
+/*#th_a a{
+	animation: title_link 5s ease infinite;*/
+	/*animation-duration: 2s;/* thời gian cho thay đổi*/
+	/*animation-name: title_link;/* tên để chạy animation(hiệu ứng)*/
+	/*animation-delay: 2s;/* thời gian độ trễ khi chuyển sang % khác*/
+	/*animation-timing-function: ease;/* thời gian tuyến tính(mặc định)*/
+	/*animation-play-state: 4s;/*chưa biết*/
+	/*animation-iteration-count: 2;/*so lan lap*/
+/*	animation-direction:normal;
+}*/
+@keyframes title_link{
+	0%{background-color: black; color: red; }
+	25%{background-color: white; color: blue;}
+	50%{background-color: pink; color: green; }
+	75%{background-color: gray; color: yellow;}
+}
+h1{
+	animation-name: title_link;
+	animation-delay: 2s;
+	animation-duration: 2s;
+	animation -transition-timing-function: ease infinite ;
+	animation-iteration-count: infinite;
+}
+h1{
+	color: green;
+}
+.a{
+
+}
+.a img{
+	float: left;
+	width: 320px;
+	height: 200px;
+	border: 2px;
+	padding: 5px;
+	opacity: 1;
+	/*transition: all 3s ease infinite*/
+	transition-duration: 3s;
+	overflow: hidden;
+	/*transform-origin: right; cố định một bên (bên phải)*/
+
+}
+h1:hover{
+	opacity: 0.5;
+	/*transform: translate(0, 4px);*/
+	/*transform: scale(1.1);*/
+}
+
+.a:hover img{
+	opacity: 0.5;
+	/*transform: translate(0, 4px);*/
+	/*transform: scale(1.1);*/
+
+
+}
+
+#th_a > a:first-child{
+	padding: 4px;
+    padding-bottom: 0px;/*quan trong*/
+    background-color: white;
+    border-radius: 46%;
+    position: absolute;
+    width: 60px;
+    top: -67px;
+    left: 203px;
+  }  
+
+#th_a > a:first-child >img{
+	max-width: 60px;
+    border-radius: 46%;
+
+}
+#neo img{
+	position: fixed;/*tạo neo đưa về chế độ của trình duyệt*/ /*còn absolude và relative theo phần tử element*/
+	border-radius: 67%;
+	width: 67px;
+	right: 6px;
+	bottom: 2px;
+
+}
+.creat{
+	/*position: absolute;*/
+	padding: 30px;
+	text-align: right;
+	margin-top: 50px;
+	font-size: 20px;
+	margin-right: 20px;
+}
+.image{
+	position: relative;
+}
+.image> .creat{
+	position: absolute;
+}

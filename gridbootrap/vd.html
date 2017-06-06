@@ -1,65 +1,149 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Create image</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="vd.css">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Grid bootrap</title>
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="vd.css">
 	<link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/icon.css">
-</head>
-<body>
-<!-- wap -->
-<div class="wap">
+	<link rel="stylesheet" type="text/css" href="fonts/icon.css">
+  </head>
+  <body>
+    <header>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12 header">
+            <div class="col-md-4 col-xs-12 col-sm-12">
+              <div class="img-logo" id="map">
+                <!--  <a href="#"><img src="img\0.jpg"></a> -->
+                <!-- <div id="logout">
+                  <a href="#" class="glyphicon glyphicon-log-out">Thoát</a>
+                </div> -->
+              </div>
+            </div>
+          </div> <!-- end col-md-12 -->
+        </div> <!-- end row -->
+      </div> <!-- end container -->
+    </div> <!-- end container-fluid -->
+</header> <!-- end header -->
 
-	<div class="bl">
-		<div id = "banner">
-			<img src="img\0.jpg">
-		</div>
-		<div id = "link">
-			<a href="#">trang chủ</a>
-			<a href="#">giới thiệu</a>
-			<a href="#">abuml-image</a>
-			<a href="#">hỗ trợ</a>
-			<a  href="#">liên hệ</a>
-		</div>
-	</div>
-	<div>
+
+<div class="container-fluid main-menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 row-menu">
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <!-- <a class="navbar-brand glyphicon glyphicon glyphicon-home" href="index.html"></a> -->
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Trang Chủ </a></li>
+                  <li><a href="#">Giới Thiệu</a></li>
+                  <li><a href="#">Ambuml_Image</a></li>
+                  <li><a href="#">Bản đồ</a></li>
+                  <li><a href="#">Liên hệ</a></li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+        </div>
+      </div> <!-- end row -->
+    </div> <!-- end  container -->
+</div> <!-- end container-fluid -->
+
+
+  <div class="img col-md-4 col-sm-6 col-xs-12">
+		<a href="#"><img class="thumbnail" src="img\1.jpg" alt="rừng cây màu vàng" title="rừng cây cổ thụ xưa"></a>
+  </div>
+  <div class="img col-md-4 col-sm-6 col-xs-12">
+		<a href="#"><img src="img\2.jpg" class="thumbnail" alt="rừng cây màu vàng" title="rừng cây cổ thụ xưa"></a>
+  </div>
+  <div class="img col-md-4 col-sm-6 col-xs-12">
+		<a href="#"><img class="thumbnail" src="img\3.jpg" alt="rừng cây cổ thụ vàng xanh" title="rừng cây cổ thụ đan xen"></a>
+  </div>
+  <!-- <div class="img col-md-4 col-sm-6 col-xs-12">
+		<a href="#"><img class="thumbnail" src="img\4.jpg" alt="sự sống của cây" title="sự sống của sự vật"></a>
+  </div> -->
+  <!-- <div class="img col-md-4 col-sm-6 col-xs-12">
+		<a href="#"><img class="thumbnail" src="img\5.jpg" title="ảnh rừng nước" alt="ảnh rừng nước"></a>
+  </div> -->
+ <!--  <div class="img col-md-4 col-sm-6 col-xs-12">
+		<a href="#"><img class="thumbnail" src="img\6.jpg" title="ảnh hoàng hôn" alt="ảnh hoàng hôn"></a>
+  </div> -->
+  <div class="img col-md-4 col-sm-6 col-xs-12">
+		<a href="#"><img class="thumbnail" src="img\7.jpg" title="ảnh đồng bằng ngày hè" alt="ảnh đồng bằng ngày hè"></a>
+  </div>
+  <div class="img col-md-4 col-sm-6 col-xs-12">
+		<a href="#"><img class="thumbnail" src="img\8.jpg" title="ảnh núi phú sỹ và những đồng bằng" alt="ảnh núi phú sỹ và những đồng bằng"></a>
+  </div>
+  <div class="img col-md-4 col-sm-6 col-xs-12">
+		<a href="#"><img class="thumbnail" src="img\9.jpg" title="ảnh nước đồng bằng" alt="ảnh nước đồng bằng"></a>
+  </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+
+
+
+
 	<!-- <div class="a3"> -->
-		<div class="a3 col-md-12 col-sm-12">
-			<div class="a col-md-4 col-sm-6 thumbnail" id = "a1" >
-			<a href="#"><img src="img\1.jpg" alt="rừng cây màu vàng" title="rừng cây cổ thụ xưa"></a>
+		<!-- <div class="a3 col-md-12 col-sm-12">
+			<div class="a col-md-4 col-sm-4 thumbnail" id = "a1" >
+			
 			</div>
 			<div class="a col-md-4 col-sm-6 thumbnail">
-				<a href="#"><img src="img\2.jpg" alt="rừng cây cổ thụ vàng xanh" title="rừng cây cổ thụ đan xen"></a>
+				
 			</div>
 			<div class="a col-md-4 col-sm-6 thumbnail">
-				<a href="#"><img src="img\1.jpg" alt="sự sống của cây" title="sự sống của sự vật"></a>
+				
 			</div>
 		</div>
 		<div class="a3 col-md-12 col-sm-12">
 			<div  class="a col-md-4 col-sm-6 thumbnail">
-			<a href="#"><img src="img\6.jpg" title="ảnh rừng nước" alt="ảnh rừng nước"></a>
+			
+			<div class="a col-md-4 col-sm-6 thumbnail">
+				
 			</div>
 			<div class="a col-md-4 col-sm-6 thumbnail">
-				<a href="#"><img src="img\5.jpg" title="ảnh hoàng hôn" alt="ảnh hoàng hôn"></a>
-			</div>
-			<div class="a col-md-4 col-sm-6 thumbnail">
-				<a href="#"><img src="img\6.jpg" title="ảnh đồng bằng ngày hè" alt="ảnh đồng bằng ngày hè"></a>
+				
 			</div>
 		</div>
 		<div class="a3 col-md-12 col-sm-12">
 			<div class="a col-md-4 col-sm-6 thumbnail">
-			<a href="#"><img src="img\1.jpg" title="ảnh rừng nước đỏ" alt="ảnh rừng nước đỏ"></a>
+			
 			</div>
 			<div class="a col-md-4 col-sm-6 thumbnail">
-				<a href="#"><img src="img\8.jpg" title="ảnh núi phú sỹ và những đồng bằng" alt="ảnh núi phú sỹ và những đồng bằng"></a>
+				
 			</div>
 			<div class="a col-md-4 col-sm-6 thumbnail">
-				<a href="#"><img src="img\9.jpg" title="ảnh nước đồng bằng" alt="ảnh nước đồng bằng"></a>
+				
 			</div>
 		</div>
 	</div>
-</div>
+	</div> -->
+<!-- </div> -->
 
-</body>
-</html>
+
+

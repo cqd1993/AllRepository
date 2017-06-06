@@ -30,14 +30,14 @@
 // var list = DB.getData();// lưu lại biến list đồng thời lưu lại vào trong localstorage
 
 
-// var app = {
-// 	newJob: function(e, type, input){
+var app = {
+	newJob: function(e, type, input){
 		
-// 		var jobName = $(input).val();
+		var jobName = $(input).val();
 
-// 		var event = window.event || e;
+		var event = window.event || e;
 
-// 		if(event.keyCode === 13 && jobName.trim() !== ''){
+		if(event.keyCode === 13 && jobName.trim() !== ''){
 
 			// if(!list[type]) list[type] = [];
 
@@ -47,47 +47,47 @@
             // console.log(b);
 			//update dom
 			// this.editorJob(type, jobName);
-			// this.addJobToList(type, jobName);
-			// reset input
-		// 	$(input).val('');
-		// }
-	// },
+			this.addJobToList(type, jobName);
+			//reset input
+			$(input).val('');
+		}
+	},
 	//addJobtolist
-	// addJobToList: function(type, jobName){
-	// 	var item ='<div href="#" class="list-group-item ui-sortable-handle">'+ jobName + ' <span class="glyphicon glyphicon-trash" onclick="app.deleteJob(this)"></span> </div>';
-	// 	$('#' + type).append(item);
-	// 	console.log(item);
+	addJobToList: function(type, jobName){
+		var item ='<div href="#" class="list-group-item ui-sortable-handle">'+ jobName + ' <span class="glyphicon glyphicon-trash" onclick="app.deleteJob(this)"></span> </div>';
+		$('#' + type).append(item);
+		console.log(item);
 		
-	// },
-// 	deleteJob: function(span)
-// 	{
-// 		var modal = $('#modal-confirm');
-// 		var btn = $('#btn-delete');
-// 		var item =$(span).parent();
+	},
+	deleteJob: function(span)
+	{
+		var modal = $('#modal-confirm');
+		var btn = $('#btn-delete');
+		var item =$(span).parent();
 
-// 		// item.remove();
+		// item.remove();
 
-// 		modal.modal('show');
+		modal.modal('show');
 
-// 		btn.off('click');
+		btn.off('click');
 
-// 		btn.on('click', function(){
-// 			// console.log("call back");
+		btn.on('click', function(){
+			// console.log("call back");
 
-// 			// var columType = item.parent().attr('id');
-// 			// var itemPosition = $('#' + columType + '.list-group-item').index(item);
-// 			// console.log(itemPosition);
-// 			// console.log(columType);
+			// var columType = item.parent().attr('id');
+			// var itemPosition = $('#' + columType + '.list-group-item').index(item);
+			// console.log(itemPosition);
+			// console.log(columType);
 
-// 			// list[columType].splice('itemPosition', 1);
-//    //          DB.setData(list);
+			// list[columType].splice('itemPosition', 1);
+   //          DB.setData(list);
 
 
-// 			item.remove();
-// 			modal.modal('hide');
-// 		})
-// 	}
-// };
+			item.remove();
+			modal.modal('hide');
+		})
+	}
+};
 
 
 	
@@ -149,6 +149,6 @@ $(function() {
 	  }
 
 	});
-	// placeholder: "ui-state-highlight"
+	
 } );
 	

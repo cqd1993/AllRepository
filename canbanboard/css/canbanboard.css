@@ -47,3 +47,8 @@
 	background-color: red;
  	height: calc( 1.5rem + 20px); 
 }
+.glyphicon-trash{
+	position: absolute;
+    right: 50px;
+    top: 15px;
+}

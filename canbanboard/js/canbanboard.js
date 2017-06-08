@@ -1,33 +1,33 @@
-// var COLUMN_TYPE = ['todo', 'doing', 'done'];
+var COLUMN_TYPE = ['tdo', 'doing', 'done'];
 
-// var DB ={
-// 	getData: function(){
-// 		if(typeof(Storage) !== "undefined")
-// 		{
-// 			var data;
-// 			try{
-// 				data = JSON.parse(localStorage.getItem('list')) || {};
+var DB ={
+	getData: function(){
+		if(typeof(Storage) !== "undefined")
+		{
+			var data;
+			try{
+				data = JSON.parse(localStorage.getItem('list')) || {};
 
-// 			}
-// 			catch (error) {
-// 				data = {};
-// 			}
-// 			return data;
-// 		}
-// 		else
-// 		{
-// 			alert("ko support");
-// 			return {};
-// 		}	
+			}
+			catch (error) {
+				data = {};
+			}
+			return data;
+		}
+		else
+		{
+			alert("ko support");
+			return {};
+		}	
 
-// 	},
-// 	setData: function(data){
-// 		localStorage.setItem('list', JSON.stringify(data));
-// 	}
+	},
+	setData: function(data){
+		localStorage.setItem('list', JSON.stringify(data));
+	}
 
-// };
+};
 
-// var list = DB.getData();// lưu lại biến list đồng thời lưu lại vào trong localstorage
+var list = DB.getData();// lưu lại biến list đồng thời lưu lại vào trong localstorage
 
 
 var app = {
@@ -39,12 +39,12 @@ var app = {
 
 		if(event.keyCode === 13 && jobName.trim() !== ''){
 
-			// if(!list[type]) list[type] = [];
+			if(!list[type]) list[type] = [];
 
-			// list[type].push(jobName);
+			list[type].push(jobName);
 			// console.log(a);
-			// DB.setData(list);
-            // console.log(b);
+			var a = DB.setData(list);
+            console.log(a);
 			//update dom
 			// this.editorJob(type, jobName);
 			this.addJobToList(type, jobName);
@@ -74,13 +74,13 @@ var app = {
 		btn.on('click', function(){
 			// console.log("call back");
 
-			// var columType = item.parent().attr('id');
-			// var itemPosition = $('#' + columType + '.list-group-item').index(item);
-			// console.log(itemPosition);
-			// console.log(columType);
+			var column_Type = item.parent().attr('id');
+			var item_Position = $('#' + column_Type + ' .list-group-item').index(item);
+			console.log(item_Position);
+			console.log(column_Type);
 
-			// list[columType].splice('itemPosition', 1);
-   //          DB.setData(list);
+			list[column_Type].splice(item_Position, 1);
+            DB.setData(list);
 
 
 			item.remove();
@@ -93,12 +93,12 @@ var app = {
 	
 
 $(function() {
-	// COLUMN_TYPE.forEach(function(type){
-	// 	var columType = list[type] || [];
-	// 	columType.forEach(function(jobName){
-	// 		app.addJobToList(type, jobName);
-	// 	})
-	// });
+	COLUMN_TYPE.forEach(function(type){
+		var column_Type = list[type] || [];
+		column_Type.forEach(function(jobName){
+			app.addJobToList(type, jobName);
+		})
+	});
 
 	// var doing = list['doing'] || [];
 	// doing.forEach(function(job){
@@ -106,9 +106,9 @@ $(function() {
 
 	// });//lưu lai trong storage
 
-	// var doing = list['todo'] || [];
+	// var doing = list['tdo'] || [];
 	// doing.forEach(function(job){
-	// 	app.addJobToList('todo', job);
+	// 	app.addJobToList('tdo', job);
 
 	// });
 
@@ -128,8 +128,8 @@ $(function() {
 	  {
 	  	// add style class
 	  	$(ui.item[0]).addClass('dragging');
-	  	// ui.item.oldColumType = ui.item.context.parentElement.getAttribute('id');
-	  	// ui.item.oldItemPosition = ui.item.index();
+		// ui.item.oldColumnType = ui.item.context.parentElement.getAttribute('id');
+	 //    ui.item.oldItemPosition = ui.item.index();
 
 	  },
 	  stop: function(event, ui)
@@ -138,13 +138,14 @@ $(function() {
 	  	$(ui.item[0]).removeClass('dragging');
 
 	  	// var item = ui.item;
-	  	// var oldColumType = item.oldColumType;
+	  	// var oldColumnType = item.oldColumnType;
 	  	// var oldItemPosition = item.oldItemPosition;
-	  	// var newColumType = item.context.parentElement.getAttribute('id');
+	  	// var newColumnType = item.context.parentElement.getAttribute('id');
+	  	// console.log(newColumnType);
 	  	// var newPosition = item.index();
-
-	  	// list[newColumType].splice(newPosition, 0, item[0].innerText);
-	  	// console.log(newColumType);
+	  	// list[oldColumnType].splice(oldItemPosition, 1);
+	  	// list[newColumnType].splice(newPosition, 0, item[0].innerText);
+	  	// console.log(newColumnType);
 	  	// DB.setData(list);
 	  }
 

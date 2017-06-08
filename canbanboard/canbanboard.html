@@ -8,9 +8,9 @@
 	<link rel="stylesheet" type="text/css" href="css/icon.css">
 	<link rel="stylesheet" type="text/css" href=" css\font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href=" css/canbanboard.css">
+	
 </head>
  
-
 <body>
 	
 	<nav class="navbar navbar-default">
@@ -26,17 +26,17 @@
 	<div class="row">
 	  <div class="col-md-4">
 	  	<h5 class="red">ToDo (0)</h5>
-		<div class="list-group sorted-list" id="todo">
-		  <div class="list-group-item">đi chợ</div>
+		<div class="list-group sorted-list" id="tdo">
+		 <!--  <div class="list-group-item">đi chợ</div>
 		  <div class="list-group-item"> chuẩn bị đồ- làm đồ</div>
-		 <div class="list-group-item">nấu</div>
+		 <div class="list-group-item">nấu</div> -->
 		</div>
 
 		
 		<div class="action">
 		  	<div class="input-group">
-		  	 	<label for="new_job_done"> new job</label>
-		  		<input type="text" class="form-control" id="new_job_done" onkeydown="app.newJob(event, 'todo', this)">
+		  		<label> new job</label>
+		  		<input type="text" class="form-control" onkeydown="app.newJob(event,'tdo', this)">
 		  		
 		  	</div>
 	  	</div>
@@ -47,13 +47,13 @@
 	  <div class="col-md-4">
 	  	<h5 class="orange">Doing (0)</h5>
 		<div class="list-group sorted-list" id="doing">
-		  <div class="list-group-item">đi chợ</div>
+		  <!-- <div class="list-group-item">đi chợ</div> -->
 		</div>
 		
 		<div class="action">
 		  	<div class="input-group">
-		  		<label for="new_job_done"> new job</label>
-		  		<input type="text" class="form-control" id="new_job_done" onkeydown="app.newJob(event,'doing', this)">
+		  		<label> new job</label>
+		  		<input type="text" class="form-control"  onkeydown="app.newJob(event,'doing', this)">
 		  		
 		  	</div>
 	  	</div>
@@ -61,16 +61,16 @@
 	  	<div class="col-md-4">
 		  	<h5 class="green">Done (0)</h5>
 			<div class="list-group sorted-list" id="done">
-			<div class="list-group-item">đi chợ</div>
+			<!-- <div class="list-group-item">đi chợ</div>
 		  	<div class="list-group-item"> chuẩn bị đồ- làm đồ</div>
-		 <div class="list-group-item">nấu</div>
+		 <div class="list-group-item">nấu</div> -->
 			</div>
 
 
 			<div class="action">
 			  	<div class="input-group">
-			  		<label for="new_job_done"> new job</label>
-			  		<input type="text" class="form-control" id="new_job_done" onkeydown="app.newJob(event,'done', this)">
+			  		<label> new job</label>
+			  		<input type="text" class="form-control"  onkeydown="app.newJob(event,'done', this)">
 			  		
 			  	</div>
 	  		</div>
@@ -115,8 +115,9 @@
 	<!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
 	<script type="text/javascript" src="js/canbanboard.js"></script>
-  
-  
+  	<script type="text/javascript" src="jquery\jquery-ui-1.12.1\jquery-ui.min.js"></script>
+	<script type="text/javascript" src="jquery\jquery-ui-1.12.1\jquery-ui.js"></script>
+  <!-- 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
   	
 </body>
 </html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="quiz.css">
+</head>
+<body>
+<div class="wap">
+	<div id="quiz" >
+    
+
+		<h1> Câu hỏi Quiz</h1>
+		<hr style="margin-top: 15px" />
+		<p id="cauhoi"></p>
+
+            <div class="buttons">
+                <button id="btn0"><span id="choice0"></span></button>
+                <button id="btn1"><span id="choice1"></span></button>
+                <button id="btn2"><span id="choice2"></span></button>
+                <button id="btn3"><span id="choice3"></span></button>
+                <button  id="btn4"  onclick="showScores()"><span id="choice4"><a href="chucmung.html">I'm finished</a></span> </button>
+               <button  id="btn5"  onclick="change_UI()"> changeUI </button>
+            </div>
+            <hr style="margin-top:50px">
+            <div id="h"></div>
+
+
+            <hr style="margin-top:50px">
+            <footer>
+                <p id="chiso"></p>
+            </footer>
+	</div>
+</div>
+<script type="text/javascript" src="jquery-3.2.0.min.js"></script>
+<script src="question.js"></script>
+ <!-- <script type="text/javascript" src="jquery-3.2.0.min.js"></script> -->
+</body>
+</html>

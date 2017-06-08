@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="quiz.css">
+</head>
+<body>
+<div class="wap">
+	<div id="quiz">
+		<h1> Câu hỏi Quiz</h1>
+		<hr style="margin-top: 15px" />
+		<p id="question"></p>
+
+            <div class="buttons">
+                <button id="btn0"><span id="choice0"></span></button>
+                <button id="btn1"><span id="choice1"></span></button>
+                <button id="btn2"><span id="choice2"></span></button>
+                <button id="btn3"><span id="choice3"></span></button>
+                <button  id="btn4"  onclick="showScores()"><span id="choice4">I'm finished</span> </button>
+            </div>
+            <hr style="margin-top:50px">
+            <footer>
+                <p id="progress"></p>
+            </footer>
+	</div>
+</div>
+
+<script type="text/javascript" src="jquery-3.2.0.min.js"></script>
+<!-- <script src="controler.js"></script> -->
+<script src="cauhoi.js"></script>
+
+</body>
+</html>
